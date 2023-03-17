@@ -9,6 +9,9 @@ module.exports = {
         "birch-white": "#F6EEDF",
         "foggy-gray": "#D1CEBD",
       },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],
