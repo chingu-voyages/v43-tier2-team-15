@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1 className="text-3xl font-bold underline text-red-500 text-center pt-8">
+        <h1 className="text-3xl font-bold underline text-bonfire text-center pt-8">
           Anime Shop Website
         </h1>
       </div>
