@@ -1,6 +1,7 @@
 import Searchbar from "./Searchbar";
 import useWindowSize from "../../hooks/useWindowSize";
 import LanguageMenu from "./LanguageMenu";
+import CurrencyMenu from "./CurrencyMenu";
 
 function Header() {
   const { windowWidth } = useWindowSize();
@@ -19,9 +20,7 @@ function Header() {
         </div>
         {windowWidth > BREAKPOINT && <Searchbar />}
         <LanguageMenu />
-        <div className="text-white flex gap-8">
-          <span>Currency Dropdown</span>
-        </div>
+        <CurrencyMenu />
       </div>
       {windowWidth <= BREAKPOINT && <Searchbar />}
     </header>
