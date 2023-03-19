@@ -1,14 +1,9 @@
-import { useState } from "react";
-function App() {
-  const [count, setCount] = useState(0);
+import Header from "./components/header/Header";
 
+function App() {
   return (
     <div className=" font-roboto">
-      <div>
-        <h1 className="text-3xl font-bold underline text-bonfire text-center pt-8">
-          Anime Shop Website
-        </h1>
-      </div>
+      <Header />
     </div>
   );
 }
