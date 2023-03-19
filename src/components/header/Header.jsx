@@ -1,5 +1,6 @@
 import Searchbar from "./Searchbar";
 import useWindowSize from "../../hooks/useWindowSize";
+import LanguageMenu from "./LanguageMenu";
 
 function Header() {
   const { windowWidth } = useWindowSize();
@@ -17,8 +18,8 @@ function Header() {
           <span>“Otaku’s world”</span>
         </div>
         {windowWidth > BREAKPOINT && <Searchbar />}
+        <LanguageMenu />
         <div className="text-white flex gap-8">
-          <span>Language Dropdown</span>
           <span>Currency Dropdown</span>
         </div>
       </div>
