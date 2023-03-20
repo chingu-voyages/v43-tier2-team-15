@@ -6,7 +6,7 @@ import telegram__icon from "../../public/images/telegram__icon.png";
 export default function Footer() {
   return (
     <div className="footer h-80 bg-[#d63447] not-italic flex justify-around items-center">
-      <div className="footer__img">
+      <div className="footer__img h-40 w-40">
         <img src={footer__logo} alt="“Otaku’s world” logo" />
       </div>
       <div className="footer__contactUs">
