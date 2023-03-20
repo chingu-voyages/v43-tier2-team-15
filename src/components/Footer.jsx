@@ -14,11 +14,23 @@ export default function Footer() {
           Contact us
         </h4>
         <div className="footer__contactUs-icons flex justify-center items-center">
-          <img src={instagram__icon} alt="“Otaku’s world” instagram page" className="my-7 mr-7"/>
+          <img
+            src={instagram__icon}
+            alt="“Otaku’s world” instagram page"
+            className="my-7 mr-7"
+          />
 
-          <img src={facebook__icon} alt="“Otaku’s world” facebook page" className="my-7 mr-7"/>
+          <img
+            src={facebook__icon}
+            alt="“Otaku’s world” facebook page"
+            className="my-7 mr-7"
+          />
 
-          <img src={telegram__icon} alt="“Otaku’s world” telegram page" className="my-7 mr-7"/>
+          <img
+            src={telegram__icon}
+            alt="“Otaku’s world” telegram page"
+            className="my-7 mr-7"
+          />
         </div>
         <a
           className="footer__contactUs-phone font-bold text-lg leading-5 text-center text-black no-underline"
@@ -27,20 +39,22 @@ export default function Footer() {
           +3805454544615
         </a>
       </div>
-      <div className="footer__about">
-        <h4>About</h4>
-        <ul>
-          <li>
-            <a href="/">Company</a>
+      <div className="footer__about mt-10">
+        <h4 className="font-bold text-2xl leading-7 text-left text-black">
+          About
+        </h4>
+        <ul className="mt-5 list-none">
+          <li className="mb-3">
+            <a href="/" className="font-normal text-lg leading-5 text-center no-underline text-black">Company</a>
           </li>
-          <li>
-            <a href="/">FAQ</a>
+          <li className="mb-3">
+            <a href="/" className="font-normal text-lg leading-5 text-center no-underline text-black">FAQ</a>
           </li>
-          <li>
-            <a href="/">Delivery</a>
+          <li className="mb-3">
+            <a href="/" className="font-normal text-lg leading-5 text-center no-underline text-black">Delivery</a>
           </li>
-          <li>
-            <a href="/">Privacy Policy</a>
+          <li className="mb-3">
+            <a href="/" className="font-normal text-lg leading-5 text-center no-underline text-black">Privacy Policy</a>
           </li>
         </ul>
       </div>
