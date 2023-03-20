@@ -10,15 +10,20 @@ export default function Footer() {
         <img src={footer__logo} alt="“Otaku’s world” logo" />
       </div>
       <div className="footer__contactUs">
-        <h4>Contact us</h4>
-        <div className="footer__contactUs-icons">
-          <img src={instagram__icon} alt="“Otaku’s world” instagram page" />
+        <h4 className="font-bold text-2xl leading-7 text-left text-black">
+          Contact us
+        </h4>
+        <div className="footer__contactUs-icons flex justify-center items-center">
+          <img src={instagram__icon} alt="“Otaku’s world” instagram page" className="my-7 mr-7"/>
 
-          <img src={facebook__icon} alt="“Otaku’s world” facebook page" />
+          <img src={facebook__icon} alt="“Otaku’s world” facebook page" className="my-7 mr-7"/>
 
-          <img src={telegram__icon} alt="“Otaku’s world” telegram page" />
+          <img src={telegram__icon} alt="“Otaku’s world” telegram page" className="my-7 mr-7"/>
         </div>
-        <a className="footer__contactUs-phone" href="tel:+3805454544615">
+        <a
+          className="footer__contactUs-phone font-bold text-lg leading-5 text-center text-black no-underline"
+          href="tel:+3805454544615"
+        >
           +3805454544615
         </a>
       </div>
