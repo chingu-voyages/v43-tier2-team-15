@@ -45,22 +45,44 @@ export default function Footer() {
         </h4>
         <ul className="mt-5 list-none">
           <li className="mb-3">
-            <a href="/" className="font-normal text-lg leading-5 text-center no-underline text-black">Company</a>
+            <a
+              href="/"
+              className="font-normal text-lg leading-5 text-center no-underline text-black"
+            >
+              Company
+            </a>
           </li>
           <li className="mb-3">
-            <a href="/" className="font-normal text-lg leading-5 text-center no-underline text-black">FAQ</a>
+            <a
+              href="/"
+              className="font-normal text-lg leading-5 text-center no-underline text-black"
+            >
+              FAQ
+            </a>
           </li>
           <li className="mb-3">
-            <a href="/" className="font-normal text-lg leading-5 text-center no-underline text-black">Delivery</a>
+            <a
+              href="/"
+              className="font-normal text-lg leading-5 text-center no-underline text-black"
+            >
+              Delivery
+            </a>
           </li>
           <li className="mb-3">
-            <a href="/" className="font-normal text-lg leading-5 text-center no-underline text-black">Privacy Policy</a>
+            <a
+              href="/"
+              className="font-normal text-lg leading-5 text-center no-underline text-black"
+            >
+              Privacy Policy
+            </a>
           </li>
         </ul>
       </div>
       <div className="footer__workSchedule">
-        <h4>Work schedule</h4>
-        <div className="footer__workSchedule-text">
+        <h4 className="font-bold text-2xl leading-7 text-center text-black">
+          Work schedule
+        </h4>
+        <div className="footer__workSchedule-text mt-12 font-normal text-lg leading-5 text-center text-black">
           <p>Schedule for Call center</p>
           <p>Tuesday - Sunday from 11 to 17</p>
           <p>Physical store - from 11 to 19</p>
