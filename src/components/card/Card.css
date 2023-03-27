@@ -110,3 +110,7 @@
   font-weight: 700;
   font-size: var(--font-size-m);
 }
+
+.to-cart:hover {
+  box-shadow: inset 0px 5px 5px rgba(122, 78, 78, 0.25);
+}
