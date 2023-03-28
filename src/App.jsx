@@ -1,12 +1,14 @@
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import NavBar from "./components/UI/NavBar";
+import Catalogue from "./components/Layout/Catalogue";
 
 function App() {
   return (
     <div className=" font-roboto">
       <Header />
       <NavBar />
+      <Catalogue />
       <main className="min-h-[70vh] px-8 py-16">
         <h2 className="text-2xl underline font-bold py-4 px-0">Page Content</h2>
         <p className="py-4">

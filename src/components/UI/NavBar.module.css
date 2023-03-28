@@ -60,23 +60,15 @@
 
 /* media responsiveness */
 
-@media (width <= 600px) {
-  .list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-
+@media (width <= 768px) {
   .list ul {
     display: flex;
     flex-direction: row;
-    padding: 0.15rem;
-  }
-  .list li {
-    font-size: 10px;
     padding: 0 0.5rem;
+  }
+
+  .list li {
+    font-size: 16px;
   }
 
   .icon {
@@ -91,15 +83,15 @@
   }
 }
 
-@media (width <= 768px) {
+@media (width <= 600px) {
   .list ul {
     display: flex;
     flex-direction: row;
-    padding: 0 0.5rem;
+    padding: 0.15rem;
   }
-
   .list li {
-    font-size: 16px;
+    font-size: 10px;
+    padding: 0 0.5rem;
   }
 
   .icon {
