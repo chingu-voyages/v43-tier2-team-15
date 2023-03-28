@@ -2,12 +2,14 @@ import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import NavBar from "./components/UI/NavBar";
 import Catalogue from "./components/Layout/Catalogue";
+import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 
 function App() {
   return (
     <div className=" font-roboto">
       <Header />
       <NavBar />
+      <WelcomeSection />
       <Catalogue />
       <main className="min-h-[70vh] px-8 py-16">
         <h2 className="text-2xl underline font-bold py-4 px-0">Page Content</h2>
@@ -67,12 +69,12 @@ function App() {
           magni necessitatibus ipsum debitis voluptates quis ex!
         </p>
       </main>
-      <Card
+      {/* <Card
         key={1}
         name={"The Promised Neverland Manga. Volume 1"}
         price={"10 euro"}
         imageUrl={"/images/product1.png"}
-      />
+      /> */}
       <Footer />
     </div>
   );
