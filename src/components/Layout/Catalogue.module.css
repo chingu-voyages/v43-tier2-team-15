@@ -1,0 +1,182 @@
+.catalogue-section {
+  background-color: #d1cebd;
+  /* border: 1px solid purple; */
+  color: black;
+  position: absolute;
+  left: 65px;
+  height: 724px;
+  width: 310px;
+}
+
+.catalogue-container {
+  font-size: 18px;
+  font-weight: 500px;
+  left: 2rem;
+  position: absolute;
+}
+
+.catalogue-container h2 {
+  line-height: 36px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.catalogue-section h2 img {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.catalogue-container .details-container {
+  padding: 1rem;
+}
+.details-container details {
+  margin-bottom: 0.5rem;
+}
+
+.catalogue-container details[open] {
+  padding: 0.2em;
+}
+
+.catalogue-container summary {
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.catalogue-container details[open] summary {
+  background-color: #d63447;
+  color: white;
+  margin-bottom: 0.3em;
+  padding: 0.2rem;
+}
+.catalogue-container details[open] summary,
+.catalogue-container details[open] p {
+  animation: slidein 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.catalogue-container p {
+  background-color: white;
+  font-size: 14px !important;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0.3;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media (width <= 992px) {
+  .catalogue-section {
+    left: 20px;
+    height: 700px;
+    width: 300px;
+  }
+}
+
+@media (width <= 768px) {
+  .catalogue-section {
+    left: 15px;
+    height: 650px;
+    width: 250px;
+  }
+
+  .catalogue-container {
+    font-size: 16px;
+    font-weight: 400px;
+    left: 1rem;
+  }
+
+  .catalogue-container h2 {
+    line-height: 30px;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+
+  .catalogue-section h2 img {
+    display: inline;
+    margin-right: 0.3rem;
+  }
+
+  .catalogue-container .details-container {
+    padding: 0.5rem;
+  }
+  .details-container details {
+    margin-bottom: 0.5rem;
+  }
+
+  .catalogue-container details[open] {
+    padding: 0.1em;
+  }
+
+  .catalogue-container summary {
+    line-height: 1.5;
+  }
+
+  .catalogue-container details[open] summary {
+    margin-bottom: 0.2em;
+    padding: 0.1rem;
+  }
+
+  .catalogue-container p {
+    font-size: 14px !important;
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media (width <= 660px) {
+  .catalogue-section {
+    left: 10px;
+    height: 600px;
+    width: 230px;
+  }
+
+  .catalogue-container {
+    font-size: 16px;
+    font-weight: 400px;
+    left: 0.5rem;
+  }
+
+  .catalogue-container h2 {
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0.5rem 0;
+  }
+
+  .catalogue-section h2 img {
+    display: inline;
+    margin-right: 0.3rem;
+  }
+
+  .catalogue-container .details-container {
+    padding: 0.5rem;
+  }
+  .details-container details {
+    margin-bottom: 0.5rem;
+  }
+
+  .catalogue-container details[open] {
+    padding: 0.1em;
+  }
+
+  .catalogue-container details[open] summary {
+    margin-bottom: 0.2em;
+    padding: 0.2rem;
+  }
+
+  .catalogue-container p {
+    font-size: 12px !important;
+    margin-bottom: 0.2rem;
+  }
+}
