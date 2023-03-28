@@ -17,7 +17,7 @@ export default function Card() {
     <div className="container">
       <div className="card">
         <div className="item-img">
-          <img src="./no__image.png" alt="No image available" />
+          <img src="/images/no__image.png" alt="No image available" />
         </div>
         <div className="favorite">
           <button className="favorite-btn" onClick={hadleFavoriteClick}>
