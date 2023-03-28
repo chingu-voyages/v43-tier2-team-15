@@ -51,7 +51,7 @@
   margin-left: 0px;
   position: relative;
   width: 30px;
-  color: var(--mandarin-pearl);
+  color: #d63447;
 }
 
 .description {
@@ -109,4 +109,8 @@
   color: white;
   font-weight: 700;
   font-size: var(--font-size-m);
+}
+
+.to-cart:hover {
+  box-shadow: inset 0px 5px 5px rgba(122, 78, 78, 0.25);
 }
