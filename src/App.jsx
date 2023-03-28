@@ -1,11 +1,12 @@
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
-import Card from "./components/card/Card";
+import NavBar from "./components/UI/NavBar";
 
 function App() {
   return (
     <div className=" font-roboto">
       <Header />
+      <NavBar />
       <main className="min-h-[70vh] px-8 py-16">
         <h2 className="text-2xl underline font-bold py-4 px-0">Page Content</h2>
         <p className="py-4">
