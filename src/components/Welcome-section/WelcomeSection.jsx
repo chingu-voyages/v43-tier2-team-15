@@ -13,16 +13,17 @@ export default function WelcomeSection() {
           Welcome to:
         </h1>
 
-        <div className="welcome__subtitle w-[326px] ">
+        <div className="welcome__subtitle w-[326px] mt-4">
           <h2 className="not-italic font-medium text-5xl flex items-center text-center text-white leading-[56px]">
             “Otaku’s world”
           </h2>
         </div>
 
-        <p className="welcome__text not-italic font-normal text-2xl leading-7 flex items-center text-white">
+        <div className="welcome__text w-[637px] h-20 mt-4">
+        <p className="not-italic font-normal text-2xl leading-7 flex items-center text-white ">
           Anime acssesory shop that provides world delivery, wholesales and
           other futures and of course amazing customer service and products!
-        </p>
+        </p></div>
         <button className="welcome__btn">Go to catalogue</button>
       </div>
     </div>
