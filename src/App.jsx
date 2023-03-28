@@ -4,7 +4,6 @@ import NavBar from "./components/UI/NavBar";
 import Card from "./components/card/Card";
 import Catalogue from "./components/Layout/Catalogue";
 
-
 function App() {
   return (
     <div className=" font-roboto">
@@ -69,7 +68,7 @@ function App() {
           magni necessitatibus ipsum debitis voluptates quis ex!
         </p>
       </main>
-      <Card id={11} />
+      <Card id={6} />
       <Footer />
     </div>
   );
