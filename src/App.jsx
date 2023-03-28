@@ -65,6 +65,12 @@ function App() {
           magni necessitatibus ipsum debitis voluptates quis ex!
         </p>
       </main>
+      <Card
+        key={1}
+        name={"The Promised Neverland Manga. Volume 1"}
+        price={"10 euro"}
+        imageUrl={"/images/product1.png"}
+      />
       <Footer />
     </div>
   );
