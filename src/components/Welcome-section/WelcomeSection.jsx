@@ -26,7 +26,7 @@ export default function WelcomeSection() {
           </p>
         </div>
         <div className="welcome__btn mt-16 ">
-          <button className="not-italic font-bold text-lg leading-5 text-center text-white w-[287px] h-20 bg-bonfire rounded-lg flex items-center justify-center">
+          <button className="not-italic font-bold text-lg leading-5 text-center text-white w-[287px] h-20 bg-bonfire rounded-lg flex items-center justify-center hover:scale-105 transition duration-500">
             Go to catalogue
           </button>
         </div>
