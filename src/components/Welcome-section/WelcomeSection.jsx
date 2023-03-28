@@ -20,11 +20,16 @@ export default function WelcomeSection() {
         </div>
 
         <div className="welcome__text w-[637px] h-20 mt-4">
-        <p className="not-italic font-normal text-2xl leading-7 flex items-center text-white ">
-          Anime acssesory shop that provides world delivery, wholesales and
-          other futures and of course amazing customer service and products!
-        </p></div>
-        <button className="welcome__btn">Go to catalogue</button>
+          <p className="not-italic font-normal text-2xl leading-7 flex items-center text-white ">
+            Anime acssesory shop that provides world delivery, wholesales and
+            other futures and of course amazing customer service and products!
+          </p>
+        </div>
+        <div className="welcome__btn mt-16 ">
+          <button className="not-italic font-bold text-lg leading-5 text-center text-white w-[287px] h-20 bg-bonfire rounded-lg flex items-center justify-center">
+            Go to catalogue
+          </button>
+        </div>
       </div>
     </div>
   );
