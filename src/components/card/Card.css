@@ -70,7 +70,8 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 70px;
+  padding: 20px 0px 0px 0px;
+  line-height: 21px;
   text-align: left;
   height: 70px;
   width: 225px;
@@ -97,6 +98,7 @@
   font-weight: 700;
   line-height: 31px;
   text-align: center;
+  padding: 0px 10px 0px 0px;
 }
 
 .to-cart {

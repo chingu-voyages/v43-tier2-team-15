@@ -6,10 +6,10 @@ import {
   faHeartCirclePlus,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Card() {
+export default function Card(props) {
   const [isFavorited, setIsFavorited] = useState(false);
 
-  const hadleFavoriteClick = () => {
+  const handleFavoriteClick = () => {
     setIsFavorited(!isFavorited);
   };
 
@@ -17,10 +17,10 @@ export default function Card() {
     <div className="container">
       <div className="card">
         <div className="item-img">
-          <img src="/images/no__image.png" alt="No image available" />
+          <img src={props.imageUrl} alt={props.name} />
         </div>
         <div className="favorite">
-          <button className="favorite-btn" onClick={hadleFavoriteClick}>
+          <button className="favorite-btn" onClick={handleFavoriteClick}>
             <FontAwesomeIcon
               className="icon-heart"
               icon={isFavorited ? faHeartCircleCheck : faHeartCirclePlus}
@@ -28,10 +28,10 @@ export default function Card() {
           </button>
         </div>
         <div className="description">
-          <div className="item-name">Lorem Ipsum</div>
+          <div className="item-name">{props.name}</div>
           <div className="flex-row">
             <div className="price">
-              <h1>10 euros</h1>
+              <h1>{props.price}</h1>
             </div>
             <button className="to-cart">To cart</button>
           </div>
