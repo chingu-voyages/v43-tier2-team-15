@@ -2,13 +2,13 @@ import styles from './OffLine-shop.css';
 
 export default function OffLineShop() {
   return (
-    <div class="flex flex-col items-center justify-center w-11/12 ml-8">
+    <div className="flex flex-col items-center justify-center w-11/12 ml-8">
 
-      <div class="flex items-center justify-center">
-        <div class="flex items-center justify-between">
-          <div class="flex flex-col px-4">
-            <span class="text-base font-bold ml-20">Our offline shop</span>
-            <p class="text-base font-normal ml-20">
+      <div className="flex items-center justify-center">
+        <div className="flex items-center justify-between">
+          <div className="flex flex-col px-4">
+            <span className="text-base font-bold ml-20">Our offline shop</span>
+            <p className="text-base font-normal ml-20">
               Founded in 2015 in Kyoto, Japan, Otaku’s World has been been a
               popular and well-known for Japanese figures, video games and all
               sorts of otaku-related merchandise. Over the years we have shipped
@@ -20,25 +20,25 @@ export default function OffLineShop() {
             </p>
           </div>
           <img
-            class="w-1/2 py-2 pr-4 ml-8"
+            className="w-1/2 py-2 pr-4 ml-8"
             src="./src/assets/images/offLineMain.png"
             alt=""
           ></img>
         </div>
       </div>
-      <div class="flex">
+      <div className="flex">
             <img
-            class=" py-2 pr-4 ml-8"
+            className=" py-2 pr-4 ml-8"
             src="./src/assets/images/offLineSide1.png"
             alt=""
           ></img>
             <img
-            class=" py-2 pr-4 ml-8"
+            className=" py-2 pr-4 ml-8"
             src="./src/assets/images/offLineSide2.png"
             alt=""
           ></img>
             <img
-            class=" py-2 pr-4 ml-8"
+            className=" py-2 pr-4 ml-8"
             src="./src/assets/images/offLineSide3.png"
             alt=""
           ></img>
