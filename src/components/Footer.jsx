@@ -1,15 +1,27 @@
-import footer__logo from "../../public/images/footer__img.png";
-import instagram__icon from "../../public/images/instagram__icon.png";
-import facebook__icon from "../../public/images/facebook__icon.png";
-import telegram__icon from "../../public/images/telegram__icon.png";
+const logoUrl = "/images/footer__img.png";
+
+const icons = [
+  {
+    name: "“Otaku’s world” instagram page",
+    iconUrl: "/images/instagram__icon.png",
+  },
+  {
+    name: "“Otaku’s world” facebook page",
+    iconUrl: "/images/facebook__icon.png",
+  },
+  {
+    name: "“Otaku’s world” telegram page",
+    iconUrl: "/images/telegram__icon.png",
+  },
+];
 
 export default function Footer() {
   return (
     <footer className="footer mx-auto w-full h-full bg-safflower-red py-5 not-italic md:h-80 md:flex md:justify-around md:items-center">
-      <div className="footer__section1 flex px-5 max-w-[1440px]   justify-around items-center md:w-6/12 md:justify-around">
+      <div className="footer__section1 flex px-5 max-w-[1440px] justify-around items-center md:w-6/12 md:justify-around">
         <div className="footer__img h-25 w-25 md:h-40 md:w-40 ">
           <img
-            src={footer__logo}
+            src={logoUrl}
             alt="“Otaku’s world” logo"
             className="mx-auto md:m-0"
           />
@@ -19,23 +31,13 @@ export default function Footer() {
             Contact us
           </h4>
           <div className="footer__contactUs-icons flex justify-center items-center">
-            <img
-              src={instagram__icon}
-              alt="“Otaku’s world” instagram page"
-              className="my-2 mx-2 md:my-7 md:mr-7"
-            />
-
-            <img
-              src={facebook__icon}
-              alt="“Otaku’s world” facebook page"
-              className="my-2 mx-2 md:my-7 md:mr-7"
-            />
-
-            <img
-              src={telegram__icon}
-              alt="“Otaku’s world” telegram page"
-              className="my-2 mx-2 md:my-7 md:mr-7"
-            />
+            {icons.map((icon) => (
+              <img
+                src={icon.iconUrl}
+                alt={icon.name}
+                className="my-2 mx-2 md:my-7 md:mr-7"
+              />
+            ))}
           </div>
           <a
             className="footer__contactUs-phone font-bold text-md text-black no-underline md:leading-5 md:text-lg  "
