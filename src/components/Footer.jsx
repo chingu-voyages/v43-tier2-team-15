@@ -5,8 +5,8 @@ import telegram__icon from "../../public/images/telegram__icon.png";
 
 export default function Footer() {
   return (
-    <footer className="footer max-w-[1440px] mx-auto h-full bg-safflower-red py-5 not-italic md:h-80 md:flex md:justify-around md:items-center">
-      <div className="footer__section1 flex px-5 w-full justify-around items-center md:w-6/12 md:justify-around">
+    <footer className="footer mx-auto w-full h-full bg-safflower-red py-5 not-italic md:h-80 md:flex md:justify-around md:items-center">
+      <div className="footer__section1 flex px-5 max-w-[1440px]   justify-around items-center md:w-6/12 md:justify-around">
         <div className="footer__img h-25 w-25 md:h-40 md:w-40 ">
           <img
             src={footer__logo}
