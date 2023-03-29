@@ -1,5 +1,5 @@
 import Header from "./components/header/Header";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import NavBar from "./components/UI/NavBar";
 import Catalogue from "./components/Layout/Catalogue";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
@@ -75,7 +75,7 @@ function App() {
         price={"10 euro"}
         imageUrl={"/images/product1.png"}
       /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
