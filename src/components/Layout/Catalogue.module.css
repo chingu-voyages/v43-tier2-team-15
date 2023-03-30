@@ -6,6 +6,9 @@
   left: 65px;
   height: 724px;
   width: 310px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .catalogue-container {

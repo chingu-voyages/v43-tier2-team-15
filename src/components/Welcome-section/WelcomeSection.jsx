@@ -5,7 +5,7 @@ export default function WelcomeSection() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="welcome">
+    <div className="welcome relative">
       <div className="welcome__img w-full h-[724px] bg-welcome-background bg-cover flex justify-center items-center">
         <div className="welcome__title z-10  md:w-[536px]">
           <h1 className=" not-italic font-bold text-white leading-20 text-6xl text-center md:text-left md:text-8xl">
