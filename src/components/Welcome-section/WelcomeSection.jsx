@@ -1,4 +1,9 @@
+import React, { useState } from "react";
+import Catalogue from "../Layout/Catalogue";
+
 export default function WelcomeSection() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="welcome">
       <div className="welcome__img w-full h-[724px] bg-welcome-background bg-cover flex justify-center items-center">
@@ -20,13 +25,18 @@ export default function WelcomeSection() {
             </p>
           </div>
           <div className="welcome__btn mt-16 ">
-            <button className="not-italic font-bold text-lg leading-5 text-center text-white w-[287px] h-20 bg-bonfire rounded-lg flex items-center justify-center m-auto md:mx-0 hover:scale-105 transition duration-500">
+            <button
+              className="not-italic font-bold text-lg leading-5 text-center text-white w-[287px] h-20 bg-bonfire rounded-lg flex items-center justify-center m-auto md:mx-0 hover:scale-105 transition duration-500"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               Go to catalogue
             </button>
+            {open && <Catalogue/>}
           </div>
         </div>
       </div>
     </div>
   );
 }
-
