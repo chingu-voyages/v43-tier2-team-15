@@ -1,8 +1,14 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import Catalogue from "../Layout/Catalogue";
 
 export default function WelcomeSection() {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    document.addEventListener("mousedown", () => {
+      setOpen(false);
+    });
+  });
 
   return (
     <div className="welcome relative">
@@ -33,7 +39,7 @@ export default function WelcomeSection() {
             >
               Go to catalogue
             </button>
-            {open && <Catalogue/>}
+            {open && <Catalogue />}
           </div>
         </div>
       </div>
