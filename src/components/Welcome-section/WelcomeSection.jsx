@@ -1,12 +1,17 @@
 import React, { useState } from "react";
+import { useRef } from "react";
 import { useEffect } from "react";
 import Catalogue from "../Layout/Catalogue";
 
 export default function WelcomeSection() {
   const [open, setOpen] = useState(false);
+  let ref = useRef(null);
+
   useEffect(() => {
-    document.addEventListener("mousedown", () => {
-      setOpen(false);
+    document.addEventListener("mousedown", (event) => {
+      if (!ref.current.contains(event.target)) {
+        setOpen(false);
+      }
     });
   });
 
@@ -39,7 +44,7 @@ export default function WelcomeSection() {
             >
               Go to catalogue
             </button>
-            {open && <Catalogue />}
+            {open && <Catalogue ref={ref} />}
           </div>
         </div>
       </div>
