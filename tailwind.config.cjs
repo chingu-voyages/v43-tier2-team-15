@@ -13,7 +13,7 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       backgroundImage: (theme) => ({
-        "welcome-background": "url('public/images/welcome__img.png')",
+        "welcome-background": "url('/images/welcome__img.png')",
       }),
     },
   },
