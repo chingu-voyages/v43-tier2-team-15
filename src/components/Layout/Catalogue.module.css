@@ -4,11 +4,16 @@
   color: black;
   position: absolute;
   left: 65px;
-  height: 724px;
+  height: 725px;
   width: 310px;
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+
+
 }
 
 .catalogue-container {
@@ -80,7 +85,7 @@
 
 @media (width <= 992px) {
   .catalogue-section {
-    left: 20px;
+    left: 0px;
     height: 700px;
     width: 300px;
   }
@@ -88,7 +93,7 @@
 
 @media (width <= 768px) {
   .catalogue-section {
-    left: 15px;
+    left: 0px;
     height: 650px;
     width: 250px;
   }
@@ -139,7 +144,7 @@
 
 @media (width <= 660px) {
   .catalogue-section {
-    left: 10px;
+    left: 0px;
     height: 600px;
     width: 230px;
   }
