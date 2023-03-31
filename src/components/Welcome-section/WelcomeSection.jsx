@@ -24,7 +24,7 @@ export default function WelcomeSection() {
           </h1>
 
           <div className="welcome__subtitle md:w-[326px] mt-4">
-            <h2 className="not-italic font-medium  text-white  text-4xl leading-[56px] text-center md:text-left md:text-5xl">
+            <h2 className="not-italic font-medium text-white text-4xl leading-[56px] text-center md:text-left md:text-5xl">
               “Otaku’s world”
             </h2>
           </div>
