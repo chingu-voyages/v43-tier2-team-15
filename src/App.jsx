@@ -3,7 +3,8 @@ import Footer from "./components/Footer";
 import NavBar from "./components/UI/NavBar";
 import Card from "./components/card/Card";
 import Catalogue from "./components/Layout/Catalogue";
-
+import ReadMore from "./components/ReadMore";
+import GoToCatalogue from "./components/GoToCatalogue";
 
 function App() {
   return (
@@ -70,6 +71,8 @@ function App() {
         </p>
       </main>
       <Card id={11} />
+      <ReadMore />
+      <GoToCatalogue />
       <Footer />
     </div>
   );
