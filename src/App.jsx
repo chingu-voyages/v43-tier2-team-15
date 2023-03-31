@@ -1,5 +1,6 @@
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
+import Card from "./components/card/Card";
 import NavBar from "./components/UI/NavBar";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 
@@ -72,8 +73,8 @@ function App() {
         name={"The Promised Neverland Manga. Volume 1"}
         price={"10 euro"}
         imageUrl={"/images/product1.png"}
-      /> 
-      <Footer /> 
+      />
+      <Footer />
     </div>
   );
 }
