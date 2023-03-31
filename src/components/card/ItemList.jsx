@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const items = [
+const products = [
   {
     id: 1,
     name: "The Promised Neverland Manga. Volume 1",
@@ -74,7 +74,7 @@ const items = [
 
   {
     id: 11,
-    name: "Darling in The FRANXX National Team Zero Two 02 1/4 Bunny Girl PVC Figure",
+    name: "Darling in The FRANXX National Team Zero Two 02",
     price: "80 euro",
     imageUrl: "/images/product11.png",
   },
@@ -136,19 +136,8 @@ const items = [
   },
 ];
 
-export default function ItemList(props) {
-  const items = props.items;
+export default function GetItem(id) {
+  var items = products.filter((item) => item.id == id);
 
-  return (
-    <div>
-      {items.map((item) => (
-        <Card
-          key={item.id}
-          name={item.name}
-          price={item.price}
-          imageUrl={item.imageUrl}
-        />
-      ))}
-    </div>
-  );
+  return items[0];
 }

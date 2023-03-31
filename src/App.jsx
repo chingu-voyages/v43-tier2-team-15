@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 import Card from "./components/card/Card";
 import NavBar from "./components/UI/NavBar";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
+import Catalogue from "./components/Layout/Catalogue";
+
 
 function App() {
   return (
@@ -68,12 +70,7 @@ function App() {
           magni necessitatibus ipsum debitis voluptates quis ex!
         </p>
       </main>
-      <Card
-        key={1}
-        name={"The Promised Neverland Manga. Volume 1"}
-        price={"10 euro"}
-        imageUrl={"/images/product1.png"}
-      />
+      <Card id={11} />
       <Footer />
     </div>
   );

@@ -5,8 +5,11 @@ import {
   faHeartCircleCheck,
   faHeartCirclePlus,
 } from "@fortawesome/free-solid-svg-icons";
+import ItemList from "./ItemList";
 
-export default function Card(props) {
+export default function Card(input) {
+  var props = ItemList(input.id);
+
   const [isFavorited, setIsFavorited] = useState(false);
 
   const handleFavoriteClick = () => {
