@@ -4,7 +4,7 @@ import Card from "./components/card/Card";
 import NavBar from "./components/UI/NavBar";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 import Catalogue from "./components/Layout/Catalogue";
-
+import ReadMore from "./components/ReadMore";
 
 function App() {
   return (
@@ -71,6 +71,7 @@ function App() {
         </p>
       </main>
       <Card id={11} />
+      <ReadMore />
       <Footer />
     </div>
   );
