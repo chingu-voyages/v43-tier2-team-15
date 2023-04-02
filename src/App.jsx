@@ -6,6 +6,7 @@ import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 import Catalogue from "./components/Layout/Catalogue";
 import ReadMore from "./components/ReadMore";
 
+
 function App() {
   return (
     <div className=" font-roboto">
@@ -70,7 +71,7 @@ function App() {
           magni necessitatibus ipsum debitis voluptates quis ex!
         </p>
       </main>
-      <Card id={11} />
+      <Card id={6} />
       <ReadMore />
       <Footer />
     </div>

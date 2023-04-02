@@ -6,110 +6,29 @@
   --font-size-xxl: 26px;
   --font-family-roboto: "Roboto", Helvetica;
 }
-
 .card {
-  display: flex;
-  position: absolute;
-  align-items: flex-end;
-  background-color: transparent;
-  box-sizing: border-box;
-  flex-direction: column;
-  height: auto;
-  height: 410px;
-  position: relative;
-  width: 250px;
   font-family: var(--font-family-roboto);
 }
 
-.item-img {
-  width: 250px;
-  height: 308px;
-  position: absolute;
-  z-index: -1;
+.description {
+  background-color: #d1cebd;
 }
 
 .favorite-btn {
-  align-items: center;
-  background-color: var(--sisal);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  height: 50px;
-  width: 60px;
-  padding: 0 16px;
-  position: relative;
-  width: auto;
-}
-
-.favorite {
-  border: none;
-  background-color: transparent;
-}
-
-.icon-heart {
-  height: 30px;
-  margin-left: 0px;
-  position: relative;
-  width: 30px;
-  color: #d63447;
-}
-
-.description {
-  background-color: var(--sisal);
-  box-sizing: border-box;
-  height: auto;
-  margin-top: 230px;
-  width: 250px;
-  height: 150px;
-  padding: 0 12px;
-  border-radius: 10px;
+  background-color: #d1cebd;
 }
 
 .item-name {
-  color: var(--thunder);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 20px 0px 0px 0px;
-  line-height: 21px;
-  text-align: left;
-  height: 70px;
-  width: 225px;
-}
-
-.flex-row {
-  margin-top: 10px;
-  align-items: center;
-  height: 35px;
-  width: 225px;
-  display: flex;
-  flex-direction: row;
+  color: #2e2d2d;
 }
 
 .price {
-  flex: 1;
-  position: relative;
-  right: 25px;
-  width: 110px;
-  height: 35px;
   color: var(--thunder);
   font-size: var(--font-size-xxl);
-  font-style: normal;
-  font-weight: 700;
-  line-height: 31px;
-  text-align: center;
-  padding: 0px 10px 0px 0px;
 }
 
 .to-cart {
-  background-color: var(--mandarin-pearl);
-  border: none;
-  border-radius: 10px;
-  height: 35px;
-  width: 75px;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
+  background-color: #f57b51;
   font-size: var(--font-size-m);
 }
 

@@ -32,7 +32,7 @@ const products = [
 
   {
     id: 5,
-    name: "Attack On Titan Levi·Ackerman Version Nendoroid Figure",
+    name: "Attack On Titan Levi·Ackerman Nendoroid Figure",
     price: "25 euro",
     imageUrl: "/images/product5.png",
   },
@@ -60,7 +60,7 @@ const products = [
 
   {
     id: 9,
-    name: "Attack On Titan Anime Figure Artfx J Levi Ackerman Action Figure",
+    name: "Attack On Titan Artfx J Levi Ackerman Action Figure",
     price: "60 euro",
     imageUrl: "/images/product9.png",
   },
