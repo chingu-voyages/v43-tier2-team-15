@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 .list ul {
@@ -26,7 +27,7 @@
 }
 
 .list li:last-child {
-  border: none;
+  border-right: none;
 }
 
 /* icon section */
@@ -34,7 +35,7 @@
 .icon {
   aspect-ratio: 3/1;
   background-color: white;
-  width: 68px;
+  width: 6rem;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -46,8 +47,8 @@
 
 .icon img {
   border-right: 1px solid black;
-  height: 28px;
-  width: 20.23px;
+  height: 20.23;
+  width: 28px;
 }
 
 .icon img:last-child {
@@ -64,11 +65,14 @@
   .list ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 0.5rem;
   }
 
   .list li {
     font-size: 16px;
+    /* padding: 0.3rem; */
   }
 
   .icon {
@@ -77,21 +81,29 @@
   }
 
   .icon img {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     padding: 0.1rem;
   }
 }
 
-@media (width <= 600px) {
+@media (width <= 660px) {
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .list ul {
     display: flex;
     flex-direction: row;
     padding: 0.15rem;
   }
   .list li {
-    font-size: 10px;
-    padding: 0 0.5rem;
+    font-size: 12px;
+    padding: 0 0.3rem;
   }
 
   .icon {
@@ -100,8 +112,8 @@
   }
 
   .icon img {
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     padding: 0.1rem;
   }
 }

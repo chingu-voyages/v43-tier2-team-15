@@ -1,8 +1,9 @@
 import styles from "./Catalogue.module.css";
+import { forwardRef } from "react";
 
-function Catalogue() {
+const Catalogue = forwardRef(({}, ref) => {
   return (
-    <div className={styles["catalogue-section"]}>
+    <div className={styles["catalogue-section"]} ref={ref}>
       <div className={styles["catalogue-container"]}>
         <h2>
           <span>
@@ -63,6 +64,6 @@ function Catalogue() {
       </div>
     </div>
   );
-}
+});
 
 export default Catalogue;

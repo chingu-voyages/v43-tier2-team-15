@@ -9,7 +9,7 @@ function NavBar() {
           <li>About</li>
           <li>Wholesale</li>
           <li>Contact</li>
-          <li>Our Shop</li>
+          <li>Shop</li>
           <li>Reviews</li>
         </ul>
 
