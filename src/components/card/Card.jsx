@@ -44,7 +44,7 @@ export default function Card({ id }) {
             <div className="price relative flex-1 w-full md:w-[110px] h-full font-bold no-underline">
               {props.price}
             </div>
-            <button className="to-cart text-white font-bold rounded-[10px] h-[auto] md:h-[35px] w-full md:w-[75px] no-underline mt-2.5 md:mt-0 md:ml-3">
+            <button className="to-cart text-white font-bold rounded-[10px] h-[auto] md:h-[35px] w-full md:w-[75px] no-underline mt-2.5 md:mt-0 md:ml-3 hover:scale-105 transition duration-500">
               To cart
             </button>
           </div>
