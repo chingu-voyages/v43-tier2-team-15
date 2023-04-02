@@ -1,9 +1,8 @@
-import styles from './OffLine-shop.css';
+import ReadMore from "../ReadMore";
 
 export default function OffLineShop() {
   return (
     <div className="flex flex-col items-center justify-center w-11/12 ml-8">
-
       <div className="flex items-center justify-center">
         <div className="flex items-center justify-between">
           <div className="flex flex-col px-4">
@@ -22,26 +21,23 @@ export default function OffLineShop() {
           <img
             className="w-1/2 py-2 pr-4 ml-8"
             src="./src/assets/images/offLineMain.png"
-            alt=""
-          ></img>
+            alt=""></img>
         </div>
       </div>
       <div className="flex">
-            <img
-            className=" py-2 pr-4 ml-8"
-            src="./src/assets/images/offLineSide1.png"
-            alt=""
-          ></img>
-            <img
-            className=" py-2 pr-4 ml-8"
-            src="./src/assets/images/offLineSide2.png"
-            alt=""
-          ></img>
-            <img
-            className=" py-2 pr-4 ml-8"
-            src="./src/assets/images/offLineSide3.png"
-            alt=""
-          ></img>
+        <img
+          className=" py-2 pr-4 ml-8"
+          src="./src/assets/images/offLineSide1.png"
+          alt=""></img>
+        <img
+          className=" py-2 pr-4 ml-8"
+          src="./src/assets/images/offLineSide2.png"
+          alt=""></img>
+        <img
+          className=" py-2 pr-4 ml-8"
+          src="./src/assets/images/offLineSide3.png"
+          alt=""></img>
+        <ReadMore />
       </div>
     </div>
   );

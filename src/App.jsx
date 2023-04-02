@@ -3,9 +3,7 @@ import Footer from "./components/Footer";
 import Card from "./components/card/Card";
 import NavBar from "./components/UI/NavBar";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
-import Catalogue from "./components/Layout/Catalogue";
-import ReadMore from "./components/ReadMore";
-
+import OffLineShop from "./components/offLine-shop/OffLine-shop";
 
 function App() {
   return (
@@ -72,7 +70,7 @@ function App() {
         </p>
       </main>
       <Card id={6} />
-      <ReadMore />
+      <OffLineShop />
       <Footer />
     </div>
   );
