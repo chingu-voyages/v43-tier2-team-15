@@ -2,7 +2,7 @@ import ReadMore from "../ReadMore";
 
 export default function WorldDelivery() {
   return (
-    <div className="worldDelilvery bg-birch-white h-[800px] lg:flex lg:justify-center lg:items-center">
+    <div className="worldDelilvery bg-birch-white h-full md:py-20 lg:flex lg:justify-center lg:items-center">
       <div className="worldDelilvery__img py-10 px-2 flex justify-center lg:py-0 lg:px-2 lg:w-1/2">
         <img src="/images/world-delivery.png" alt="World delivery image" />
       </div>
