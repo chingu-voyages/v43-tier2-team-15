@@ -1,11 +1,10 @@
+import ReadMore from "../ReadMore";
+
 export default function WorldDelivery() {
   return (
     <div className="worldDelilvery bg-birch-white h-[800px] lg:flex lg:justify-center lg:items-center">
       <div className="worldDelilvery__img py-10 px-2 flex justify-center lg:py-0 lg:px-2 lg:w-1/2">
-        <img
-          src="/images/world-delivery.png"
-          alt="World delivery image"
-        />
+        <img src="/images/world-delivery.png" alt="World delivery image" />
       </div>
       <div className="worldDelilvery__text lg:w-1/2 h-[452px]">
         <h3 className="not-italic font-bold text-4xl flex justify-center text-center text-black leading-10">
@@ -23,7 +22,9 @@ export default function WorldDelivery() {
             delivery please read the infrormation down below.
           </p>
         </div>
-        <div></div>
+        <div className="worldDelilvery__btn flex justify-center">
+          <ReadMore />
+        </div>
       </div>
     </div>
   );
