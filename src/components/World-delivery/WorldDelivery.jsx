@@ -3,7 +3,7 @@ export default function WorldDelivery() {
     <div className="worldDelilvery bg-birch-white h-[800px] lg:flex lg:justify-center lg:items-center">
       <div className="worldDelilvery__img py-10 px-2 flex justify-center lg:py-0 lg:px-2 lg:w-1/2">
         <img
-          src="../../public/images/world-delivery.png"
+          src="/images/world-delivery.png"
           alt="World delivery image"
         />
       </div>
