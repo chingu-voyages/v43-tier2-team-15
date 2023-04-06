@@ -60,7 +60,6 @@ function Filters(props) {
                   type="checkbox"
                   id={id}
                   name={id}
-                  value={1}
                   onChange={handleCheckboxChange}
                 />
                 <h4 className="caption">{name}</h4>

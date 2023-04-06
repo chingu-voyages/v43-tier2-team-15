@@ -3,8 +3,7 @@ import Footer from "./components/Footer";
 import Card from "./components/card/Card";
 import NavBar from "./components/UI/NavBar";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
-import OffLineShop from "./components/offLine-shop/OffLine-shop";
-import Filters from "./components/Layout/Filters";
+import OffLineShop from "./components/offline-shop/OfflineShop";
 
 function App() {
   return (
@@ -70,7 +69,6 @@ function App() {
           magni necessitatibus ipsum debitis voluptates quis ex!
         </p>
       </main>
-      <Filters />
       <Card id={6} />
       <OffLineShop />
       <Footer />
