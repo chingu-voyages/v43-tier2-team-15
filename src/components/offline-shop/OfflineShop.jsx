@@ -11,20 +11,17 @@ const FrameComponent = () => {
           </b>
         </div>
         <div className="absolute top-[9.38rem] left-[7.81rem] text-[1.5rem] text-left flex items-center w-[31.25rem]">
-          <span className="[line-break:anywhere] w-full">
+          <span className=" w-full">
             <p className="m-0">
               Founded in 2015 in Kyoto, Japan, Otaku’s World has been been a
               popular and well-known for Japanese figures, video games and all
               sorts of otaku-related merchandise. Over the years we have shipped
               hundreds of thousands of items to happy customers around the
               globe.
-            </p>
-            <p className="m-0">&nbsp;</p>
-            <p className="m-0">
-              We are always glad to have tnew customers and provide them the
-              best service and great quality merchandize, our customers deserve
-              all the best in this world and we’re forever grateful to have such
-              a supporting client-base!
+              <br></br>We are always glad to have tnew customers and provide
+              them the best service and great quality merchandize, our customers
+              deserve all the best in this world and we’re forever grateful to
+              have such a supporting client-base!
             </p>
           </span>
         </div>
