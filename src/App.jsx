@@ -4,6 +4,9 @@ import Card from "./components/card/Card";
 import NavBar from "./components/UI/NavBar";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 import OffLineShop from "./components/offline-shop/OfflineShop";
+import OffLineShop from "./components/offLine-shop/OffLine-shop";
+import Filters from "./components/Layout/Filters";
+import WorldDelivery from "./components/World-delivery/WorldDelivery";
 
 function App() {
   return (
@@ -69,7 +72,9 @@ function App() {
           magni necessitatibus ipsum debitis voluptates quis ex!
         </p>
       </main>
+      <Filters />
       <Card id={6} />
+      <WorldDelivery/>
       <OffLineShop />
       <Footer />
     </div>
