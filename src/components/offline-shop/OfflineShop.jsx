@@ -1,11 +1,11 @@
 import ReadMore from "../ReadMore";
 import "./OfflineShop.css";
 
-const FrameComponent = () => {
+const OfflineShop = () => {
   return (
     <div className="relative bg-foggy-gray w-full overflow-hidden flex flex-col items-center justify-center text-center text-[1.13rem] text-black font-main-text">
       <div className="self-stretch relative bg-lightgray h-[63.75rem] shrink-0">
-        <div className="absolute top-[55.88rem] left-[35.94rem] rounded-3xs bg-coral flex flex-col py-[0rem] px-[3.31rem] box-border items-end justify-center text-white">
+        <div className="absolute top-[55.9rem] left-[35.9rem] flex flex-col py-[0rem] px-[3.3rem] box-border items-end justify-center">
           <b className="self-stretch flex-1 relative flex items-center justify-center">
             <ReadMore />
           </b>
@@ -25,32 +25,32 @@ const FrameComponent = () => {
             </p>
           </span>
         </div>
-        <b className="absolute top-[3.69rem] left-[7.81rem] text-[2.25rem]">
+        <b className="absolute top-[3.8rem] left-[7.8rem] text-[2.25rem]">
           Our offline shop
         </b>
         <img
-          className="main-img absolute top-[3.69rem] left-[42.06rem] rounded-3xs w-[40.19rem] h-[29.88rem] object-cover"
+          className="main-img absolute top-[3.8rem] left-[42.1rem] rounded-3xs w-[40.2rem] h-[29.9rem] object-cover"
           alt=""
           src="src\assets\images\offlineMain.png"
         />
-        <div className="absolute top-[36.94rem] left-[7.94rem] w-[74.19rem] flex flex-row items-start justify-center gap-[3.75rem]">
+        <div className="absolute top-[36.9rem] left-[7.9rem] w-[74.2rem] flex flex-row items-start justify-center gap-[3.75rem]">
           <img
-            className="side-img relative rounded-3xs w-[16.23rem] h-[13.31rem] shrink-0 object-cover"
+            className="side-img relative rounded-3xs w-[16.2rem] h-[13.3rem] shrink-0 object-cover"
             alt=""
             src="src\assets\images\offlineSide1.png"
           />
           <img
-            className="side-img  relative rounded-3xs w-[16.23rem] h-[13.31rem] shrink-0 object-cover"
+            className="side-img  relative rounded-3xs w-[16.2rem] h-[13.3rem] shrink-0 object-cover"
             alt=""
             src="/src\assets\images\offlineSide2.png"
           />
           <img
-            className="side-img  relative rounded-3xs w-[16.23rem] h-[13.31rem] shrink-0 object-cover"
+            className="side-img  relative rounded-3xs w-[16.2rem] h-[13.3rem] shrink-0 object-cover"
             alt=""
             src="src\assets\images\offlineSide3.png"
           />
           <img
-            className="side-img relative rounded-3xs w-[16.23rem] h-[13.31rem] shrink-0 object-cover"
+            className="side-img relative rounded-3xs w-[16.2rem] h-[13.3rem] shrink-0 object-cover"
             alt=""
             src="src\assets\images\offlineSide4.png"
           />
@@ -60,4 +60,4 @@ const FrameComponent = () => {
   );
 };
 
-export default FrameComponent;
+export default OfflineShop;
