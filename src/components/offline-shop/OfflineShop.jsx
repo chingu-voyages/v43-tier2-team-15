@@ -9,7 +9,7 @@ const OfflineShop = () => {
           <h1 className="text-[2.25rem] not-italic font-bold text-left text-black">
             Our offline shop
           </h1>
-          <div className="description not-italic font-normal text-md md:text-xl lg:text-2xl leading-7 text-black  mt-12">
+          <div className="description not-italic font-normal text-md md:text-xl lg:text-2xl lg:w-[500px] lg:mr-12 leading-7 text-black  mt-12">
             <p className="">
               Founded in 2015 in Kyoto, Japan, Otaku’s World has been been a
               popular and well-known for Japanese figures, video games and all
