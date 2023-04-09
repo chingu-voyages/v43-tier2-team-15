@@ -1,11 +1,15 @@
 .catalogue-section {
   background-color: #d1cebd;
-  /* border: 1px solid purple; */
   color: black;
   position: absolute;
   left: 65px;
   height: 724px;
   width: 310px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .catalogue-container {
