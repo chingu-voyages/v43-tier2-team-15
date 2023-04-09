@@ -1,5 +1,6 @@
 import styles from "./Catalogue.module.css";
 import { forwardRef } from "react";
+import { Link } from "react-router-dom";
 
 const Catalogue = forwardRef(({}, ref) => {
   return (
@@ -18,8 +19,10 @@ const Catalogue = forwardRef(({}, ref) => {
           </details>
 
           <details>
-            <summary>Anime action figures </summary>
-            <p>Lorem</p>
+            <summary>Anime action figures</summary>
+            <p>
+              <Link to="/products">Anime action figures</Link>
+            </p>
           </details>
 
           <details>
@@ -57,7 +60,7 @@ const Catalogue = forwardRef(({}, ref) => {
             <p>Lorem</p>
           </details>
           <details>
-            <summary> Badges</summary>
+            <summary>Badges</summary>
             <p>Lorem</p>
           </details>
         </div>
