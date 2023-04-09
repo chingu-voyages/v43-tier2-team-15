@@ -1,6 +1,6 @@
 .filters {
   width: 320px;
-  height: 1555px;
+  height: 1100px;
   padding: 25px 10px 60px 15px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -42,9 +42,9 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  height: 325px;
-  width: 220px;
   position: relative;
+  padding: 40px 0px 40px 10px;
+  gap: 10px;
 }
 
 .criteria {
@@ -52,16 +52,20 @@
   flex-direction: row;
 }
 
+.apply {
+  padding: 25px 0px 0px 0px;
+}
+
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   .criteria input[type="checkbox"] {
-    --active: #2e2d2d;
+    --active: #f57b51;
     --active-inner: #fff;
-    --focus: 2px rgba(58, 62, 75, 0.3);
-    --border: #4a4b57;
-    --border-hover: #8d8c8c;
+    --focus: 2px #f35656;
+    --border: #4d4d4d;
+    --border-hover: #99565d;
     --background: #fff;
     --disabled: #f6f8ff;
-    --disabled-inner: #e1e6f9;
+    --disabled-inner: #f9e1e1;
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 21px;

@@ -3,17 +3,6 @@ import "./Filters.css";
 
 const FILTERS = [
   {
-    title: "Expanded Filters",
-    options: [
-      { id: "recommended", name: "Recommended" },
-      { id: "recently-added", name: "Recently Added" },
-      { id: "in-stock", name: "In stock" },
-      { id: "most-rated", name: "Most Rated" },
-      { id: "price-low-high", name: "Price: Low → High" },
-      { id: "price-high-low", name: "Price: High → Low" },
-    ],
-  },
-  {
     title: "Brand",
     options: [
       { id: "banpresto", name: "Banpresto" },
@@ -34,6 +23,10 @@ const FILTERS = [
       { id: "azone-bjd", name: "Azone BJD" },
       { id: "figma", name: "Figma" },
       { id: "nendoroid", name: "Nendoroid" },
+      { id: "cu-poche", name: "Cu-Poche" },
+      { id: "dorbz", name: "Dorbz" },
+      { id: "pop-funko", name: "Pop! Funko" },
+      { id: "pullip", name: "Pullip" },
       { id: "play-arts-kai", name: "Play Arts Kai" },
     ],
   },
@@ -52,7 +45,6 @@ function Filters(props) {
         <div key={title}>
           <h2 className="title">{title}</h2>
           <div className="expended-filters">
-            <h3 className="sub-title">Expanded Filters</h3>
             {options.map(({ id, name }) => (
               <div key={id} className="criteria">
                 <input
@@ -68,6 +60,11 @@ function Filters(props) {
           </div>
         </div>
       ))}
+      <div className="apply">
+        <button className="h-10 w-full md:w-[200px] text-lg font-bold leading-[21px] tracking-normal text-center bg-bonfire text-[white] cursor-pointer ease-[ease] px-[2rem] py-0 rounded-[10px] hover:scale-105 transition duration-500 font-family-[Roboto]">
+          Apply
+        </button>
+      </div>
     </div>
   );
 }
