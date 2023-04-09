@@ -1,14 +1,18 @@
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
+import Card from "./components/card/Card";
 import NavBar from "./components/UI/NavBar";
-import Catalogue from "./components/Layout/Catalogue";
+import WelcomeSection from "./components/Welcome-section/WelcomeSection";
+import OfflineShop from "./components/offline-shop/OfflineShop";
+import Filters from "./components/Layout/Filters";
+import WorldDelivery from "./components/World-delivery/WorldDelivery";
 
 function App() {
   return (
     <div className=" font-roboto">
       <Header />
       <NavBar />
-      <Catalogue />
+      <WelcomeSection />
       <main className="min-h-[70vh] px-8 py-16">
         <h2 className="text-2xl underline font-bold py-4 px-0">Page Content</h2>
         <p className="py-4">
@@ -67,6 +71,10 @@ function App() {
           magni necessitatibus ipsum debitis voluptates quis ex!
         </p>
       </main>
+      <Filters />
+      <Card id={6} />
+      <WorldDelivery />
+      <OfflineShop />
       <Footer />
     </div>
   );

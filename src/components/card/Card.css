@@ -1,0 +1,33 @@
+:root {
+  --mandarin-pearl: #f57b51;
+  --sisal: #d1cebd;
+  --thunder: #2e2d2d;
+  --font-size-m: 18px;
+  --font-size-xxl: 26px;
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.card {
+  font-family: var(--font-family-roboto);
+}
+
+.description {
+  background-color: #d1cebd;
+}
+
+.favorite-btn {
+  background-color: #d1cebd;
+}
+
+.item-name {
+  color: #2e2d2d;
+}
+
+.price {
+  color: var(--thunder);
+  font-size: var(--font-size-xxl);
+}
+
+.to-cart {
+  background-color: #f57b51;
+  font-size: var(--font-size-m);
+}
