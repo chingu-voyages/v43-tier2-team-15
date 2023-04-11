@@ -19,7 +19,7 @@ export default function Card({ id }) {
   return (
     <div className="container">
       <div className="card relative bg-transparent flex flex-col items-end h-[auto] md:h-[410px] w-[250px] box-border">
-        <div className="item-img absolute z-[-1] w-full h-[308px]">
+        <div className="item-img absolute w-full h-[308px]">
           <img
             src={props.imageUrl}
             alt={props.name}
@@ -36,7 +36,7 @@ export default function Card({ id }) {
             />
           </button>
         </div>
-        <div className="description box-border h-[auto] md:h-[150px] w-[250px] md:w-full mt-2 md:mt-[230px] px-3 py-0 rounded-[10px]">
+        <div className="description box-border z-[1] h-[auto] md:h-[150px] w-[250px] md:w-full mt-2 md:mt-[230px] px-3 py-0 rounded-[10px]">
           <div className="item-name font-medium text-lg leading-[21px] h-[auto] md:h-[70px] w-full pt-5 pb-0 px-0 text-left not-italic">
             {props.name}
           </div>
