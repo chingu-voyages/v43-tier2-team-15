@@ -10,8 +10,8 @@ export default function ProductItem() {
           <p className="not-italic font-normal text-sm leading-4 text-left text-black">
             item code: 858808
           </p>
-          <div>
-            <div className="productItem__main-infoCircle"></div>{" "}
+          <div className="flex">
+            <div className="productItem__main-infoCircle rounded-full w-6 h-6 bg-green-700 mr-3"></div>
             <span className="not-italic font-normal text-2xl leading-7 flex items-center text-center text-black">
               In stock
             </span>
