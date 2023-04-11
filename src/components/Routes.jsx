@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import App from "../App";
 import ProductList from "./pages/ProductListPage";
-import ProductItem from "./pages/ProductItemPage"
+import ProductItem from "./pages/ProductItemPage";
 
 
 export default function RoutesList() {
