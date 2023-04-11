@@ -1,8 +1,12 @@
+import ProductItemPageSlider from "../ProductItemPage-Slider.jsx";
+
 export default function ProductItem() {
   return (
-    <div className="productItem bg-birch-white">
+    <div className="productItem bg-birch-white pt-24">
       <div className="productItem__main flex">
-        <div className="productItem__main-img w-1/2"></div>
+        <div className="productItem__main-img w-1/2">
+            <ProductItemPageSlider/>
+        </div>
         <div className="productItem__main-info w-1/2">
           <h2 className="not-italic font-bold text-5xl leading-10 text-black">
             Taito Hatsune Miku Figure Costumes China Dress Ver.
