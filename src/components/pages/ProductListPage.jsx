@@ -88,7 +88,8 @@ export default function ProductList() {
           </ol>
         </nav>
       </div>
-
+      <Catalogue />
+      <Filters />
       <Card id={1} />
       <Footer />
     </div>
