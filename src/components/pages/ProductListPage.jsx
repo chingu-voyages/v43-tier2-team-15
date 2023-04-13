@@ -1,11 +1,23 @@
+import { useState } from "react";
 import Header from "../header/Header";
 import NavBar from "../UI/NavBar";
 import Footer from "../Footer";
 import Filters from "../Layout/Filters";
 import Card from "../card/Card";
 import Catalogue from "../Layout/Catalogue";
+import Pagination from "./Pagination";
 
 export default function ProductList() {
+  const itemsPerPage = 15;
+
+  const productList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = productList.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
     <div className="product-list-page bg-[#F6EEDF]">
       <Header />
@@ -90,7 +102,21 @@ export default function ProductList() {
       </div>
       <Catalogue />
       <Filters />
-      <Card id={1} />
+      <div className="product-list">
+        {currentItems.map((item) => (
+          <Card
+            key={item}
+            id={item}
+            currentPage={currentPage}
+            itemsPerPage={itemsPerPage}
+          />
+        ))}
+        <Pagination
+          itemsPerPage={itemsPerPage}
+          totalItems={productList.length}
+          setCurrentPage={setCurrentPage}
+        />
+      </div>
       <Footer />
     </div>
   );

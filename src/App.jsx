@@ -9,7 +9,7 @@ import WorldDelivery from "./components/World-delivery/WorldDelivery";
 
 function App() {
   return (
-    <div className=" font-roboto">
+    <div className=" font-roboto bg-[#F6EEDF]">
       <Header />
       <NavBar />
       <WelcomeSection />
