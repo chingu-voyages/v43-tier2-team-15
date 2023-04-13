@@ -10,7 +10,9 @@ import Pagination from "./Pagination";
 export default function ProductList() {
   const itemsPerPage = 15;
 
-  const productList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const productList = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+  ];
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -102,7 +104,7 @@ export default function ProductList() {
       </div>
       <Catalogue />
       <Filters />
-      <div className="product-list">
+      <div className="product-list grid grid-cols-3 gap-16 w-[870px]">
         {currentItems.map((item) => (
           <Card
             key={item}
