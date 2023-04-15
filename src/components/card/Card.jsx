@@ -17,8 +17,8 @@ export default function Card({ id }) {
   };
 
   return (
-    <div className="container">
-      <div className="card relative bg-transparent flex flex-col items-end h-[auto] md:h-[410px] w-[250px] box-border">
+    <div className="container w-[250px]">
+      <div className="card relative bg-transparent flex flex-col items-end h-[auto] md:h-[410px] box-border">
         <div className="item-img absolute w-full h-[308px]">
           <img
             src={props.imageUrl}

@@ -10,7 +10,7 @@ import ProductItem from "./components/pages/ProductItemPage";
 
 function App() {
   return (
-    <div className=" font-roboto">
+    <div className=" font-roboto bg-[#F6EEDF]">
       <Header />
       <NavBar />
       <WelcomeSection />
