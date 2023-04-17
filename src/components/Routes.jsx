@@ -10,8 +10,8 @@ export default function RoutesList() {
     <Routes>
       <Route exact path="/" element={<App />} />
       <Route path="/products" element={<ProductList />} />
-      <Route path="/products" element={<ProductItem/>}/>
-      <Route path="/products" element={<Cart/>}/>
+      <Route path="/productItem" element={<ProductItem/>}/>
+      <Route path="/cart" element={<Cart/>}/>
     </Routes>
   );
 }
