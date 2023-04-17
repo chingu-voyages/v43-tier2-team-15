@@ -17,7 +17,7 @@ export default function ProductItemSlider() {
   return (
     <div className="slider">
       <img src={sliderData.value} height="570" width="500" className="m-auto" />
-      <div className="flex justify-center m-auto md:w-[500px] p-5">
+      <div className="flex justify-center m-auto p-5">
         {images.map((data, i) => (
           <div className="m-auto h-24" >
             <img
