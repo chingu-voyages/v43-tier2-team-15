@@ -43,7 +43,7 @@ export default function Cart() {
             <div className="order__price not-italic font-bold text-xl leading-6 flex items-center text-center text-black">
               40 euros
             </div>
-            <div className="order__bin flex items-center cursor-pointer">
+            <div className="order__bin flex items-center ease-[ease] hover:scale-105 transition duration-500 cursor-pointer">
               <img src="/images/cart_bin.png" alt="Remove the item" />
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function Cart() {
             <div className="order__price not-italic font-bold text-xl leading-6 flex items-center text-center text-black">
               25 euros
             </div>
-            <div className="order__bin flex items-center cursor-pointer">
+            <div className="order__bin flex items-center ease-[ease] hover:scale-105 transition duration-500 cursor-pointer">
               <img src="/images/cart_bin.png" alt="Remove the item" />
             </div>
           </div>
@@ -94,13 +94,36 @@ export default function Cart() {
             <div className="order__price not-italic font-bold text-xl leading-6 flex items-center text-center text-black">
               70 euros
             </div>
-            <div className="order__bin flex items-center  cursor-pointer">
+            <div className="order__bin flex items-center ease-[ease] hover:scale-105 transition duration-500 cursor-pointer">
               <img src="/images/cart_bin.png" alt="Remove the item" />
             </div>
           </div>
           <div className="line w-full border border-black mt-10"></div>
         </div>
-        <div className="order__column2 w-1/2"></div>
+        <div className="order__column2 w-1/2 flex items-center justify-center">
+          <div className="w-[500px] h-[510px] rounded-lg bg-[#D1CEBD]">
+            <div className="h-2/5 order__column2-text flex justify-around">
+              <p className="not-italic font-bold text-2xl leading-7 flex items-center text-center text-black">
+                Your total:
+              </p>
+              <p className="not-italic font-bold text-2xl leading-7 flex items-center text-center text-black">
+                450 euros
+              </p>
+            </div>
+            <div className="h-3/5">
+              <div className="flex items-center justify-center">
+                <button className="h-20 w-[370px] not-italic font-bold text-lg leading-5 text-center text-white bg-bonfire ease-[ease] rounded-[10px] hover:scale-105 transition duration-500">
+                  Proceed order
+                </button>
+              </div>
+              <div className="flex justify-center">
+                <button className="mt-10 h-20 w-[370px] not-italic font-bold text-lg leading-5 text-center text-white ease-[ease] border border-bonfire rounded-[10px] hover:scale-105 transition duration-500">
+                  Continue shopping
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
