@@ -3,7 +3,7 @@ import NavBar from "../UI/NavBar";
 
 export default function Cart() {
   return (
-    <>
+    <div className=" bg-birch-white">
       <Header />
       <NavBar />
       <div className="cart px-2 xl:px-16 py-12">
@@ -127,6 +127,6 @@ export default function Cart() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
