@@ -1,3 +1,4 @@
+import IncrementDecrement from "../Increment-Decrement.jsx";
 import ProductItemPageSlider from "../ProductItemPage-Slider.jsx";
 
 export default function ProductItem() {
@@ -26,11 +27,13 @@ export default function ProductItem() {
             <li>Multiple Colors</li>
             <li>Package Weight: 2.0 pounds</li>
           </ul>
-          <div className="productItem__main-infoPrice mt-20">
+          <div className="productItem__main-infoPrice mt-20 flex">
             <h4 className="not-italic font-bold text-4xl leading-10 text-black">
               40 euros
             </h4>
-            <div></div>
+            <div>
+              <IncrementDecrement/>
+            </div>
           </div>
         </div>
       </div>
