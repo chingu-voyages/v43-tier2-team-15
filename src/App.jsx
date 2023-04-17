@@ -14,6 +14,7 @@ function App() {
       <Header />
       <NavBar />
       <WelcomeSection />
+      <ProductItem/>
       <main className="min-h-[70vh] px-8 py-16">
         <h2 className="text-2xl underline font-bold py-4 px-0">Page Content</h2>
         <p className="py-4">
