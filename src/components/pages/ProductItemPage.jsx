@@ -1,6 +1,7 @@
 import { useState } from "react";
 import IncrementDecrement from "../Increment-Decrement.jsx";
 import ProductItemPageSlider from "../ProductItemPage-Slider.jsx";
+import Buy from "../Buy";
 
 export default function ProductItem() {
   const [amount, setAmount] = useState(1);
@@ -9,7 +10,7 @@ export default function ProductItem() {
   const setDecrease = () => {
     if (amount > 1) {
       setAmount(amount - 1);
-      setPrice (price - 40)
+      setPrice(price - 40);
     }
   };
 
@@ -54,6 +55,9 @@ export default function ProductItem() {
                 setIncrease={setIncrease}
               />
             </div>
+          </div>
+          <div className="buyBtn mt-12 flex justify-center md:block">
+            <Buy />
           </div>
         </div>
       </div>
