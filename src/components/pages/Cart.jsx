@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import Header from "../header/Header";
 import NavBar from "../UI/NavBar";
 
@@ -127,6 +128,7 @@ export default function Cart() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
