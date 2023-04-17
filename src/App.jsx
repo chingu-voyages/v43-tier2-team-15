@@ -6,6 +6,8 @@ import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 import OfflineShop from "./components/offline-shop/OfflineShop";
 import Filters from "./components/Layout/Filters";
 import WorldDelivery from "./components/World-delivery/WorldDelivery";
+import { Link } from "react-router-dom";
+
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       <NavBar />
       <WelcomeSection />
       <Filters />
-      <Card id={6} />
+      <Link to="/productItem">
+        <Card id={6} />
+      </Link>
       <WorldDelivery />
       <OfflineShop />
       <Footer />
