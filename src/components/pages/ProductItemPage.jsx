@@ -1,12 +1,28 @@
+import { useState } from "react";
 import IncrementDecrement from "../Increment-Decrement.jsx";
 import ProductItemPageSlider from "../ProductItemPage-Slider.jsx";
 
 export default function ProductItem() {
+  const [amount, setAmount] = useState(1);
+  const [price, setPrice] = useState(40);
+
+  const setDecrease = () => {
+    if (amount > 1) {
+      setAmount(amount - 1);
+      setPrice (price - 40)
+    }
+  };
+
+  const setIncrease = () => {
+    setAmount(amount + 1);
+    setPrice(price + 40);
+  };
+
   return (
     <div className="productItem bg-birch-white pt-24">
       <div className="productItem__main md:flex">
         <div className="productItem__main-img md:w-1/2">
-            <ProductItemPageSlider/>
+          <ProductItemPageSlider />
         </div>
         <div className="productItem__main-info p-4 md:p-0 md:w-1/2">
           <h2 className="not-italic font-bold text-5xl leading-10 text-black">
@@ -28,11 +44,15 @@ export default function ProductItem() {
             <li>Package Weight: 2.0 pounds</li>
           </ul>
           <div className="productItem__main-infoPrice mt-20 flex">
-            <h4 className="not-italic font-bold text-4xl leading-10 text-black">
-              40 euros
+            <h4 className="not-italic font-bold text-3xl md:text-4xl leading-10 text-black">
+              {price} euros
             </h4>
             <div>
-              <IncrementDecrement/>
+              <IncrementDecrement
+                amount={amount}
+                setDecrease={setDecrease}
+                setIncrease={setIncrease}
+              />
             </div>
           </div>
         </div>
