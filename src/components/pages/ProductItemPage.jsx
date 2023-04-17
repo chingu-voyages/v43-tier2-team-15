@@ -2,6 +2,11 @@ import { useState } from "react";
 import IncrementDecrement from "../Increment-Decrement.jsx";
 import ProductItemPageSlider from "../ProductItemPage-Slider.jsx";
 import Buy from "../Buy";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHeartCircleCheck,
+  faHeartCirclePlus,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function ProductItem() {
   const [amount, setAmount] = useState(1);
@@ -17,6 +22,12 @@ export default function ProductItem() {
   const setIncrease = () => {
     setAmount(amount + 1);
     setPrice(price + 40);
+  };
+
+  const [isFavorited, setIsFavorited] = useState(false);
+
+  const handleFavoriteClick = () => {
+    setIsFavorited(!isFavorited);
   };
 
   return (
@@ -56,8 +67,21 @@ export default function ProductItem() {
               />
             </div>
           </div>
-          <div className="buyBtn mt-12 flex justify-center md:block">
-            <Buy />
+          <div className="flex justify-between">
+            <div className="buyBtn mt-12 flex justify-center md:block">
+              <Buy />
+            </div>
+            <div className="favourite mt-12 lg:mr-16 items-center flex">
+              <button
+                className="h-20 h-[50px] px-4 py-0 rounded-[10px] relative"
+                onClick={handleFavoriteClick}
+              >
+                <FontAwesomeIcon
+                  className="icon-heart ml-0 h-[50px] w-[50px] relative text-safflower-red"
+                  icon={isFavorited ? faHeartCircleCheck : faHeartCirclePlus}
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
