@@ -6,6 +6,7 @@ import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 import OfflineShop from "./components/offline-shop/OfflineShop";
 import Filters from "./components/Layout/Filters";
 import WorldDelivery from "./components/World-delivery/WorldDelivery";
+import ProductItem from "./components/pages/ProductItemPage";
 
 function App() {
   return (
