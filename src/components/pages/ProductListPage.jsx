@@ -29,7 +29,7 @@ export default function ProductList() {
         alt=""
         src="src/assets/images/banner.png"
       />
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 md:gap-[-10]">
         <div className="left-panel mt-[55px]">
           <div className="breadcrumb ml-[65px] mb-[45px]">
             <nav class="flex" aria-label="Breadcrumb">
@@ -81,33 +81,33 @@ export default function ProductList() {
             </div>
           </div>
         </div>
-        <div className="products-list-sort mr-[65px]">
-          <div class="filter-sort px-0 py-10 float-right">
-            <div class="row align-items-center">
-              <div class="col-auto d-none d-lg-block font-roboto font-medium text-xs leading-4 tracking-widest text-left">
+        <div className="products-list-sort mr-[4vw]">
+          <div className="filter-sort px-0 py-4 lg:py-10 float-right">
+            <div className="row items-center">
+              <div className="col-auto d-none lg:block font-roboto font-medium text-xs leading-4 tracking-widest text-left">
                 <label>SORT BY:</label>
               </div>
-              <div class="col">
-                <select class="js-filter-sort input--sort block rounded-md border border-gray-500 bg-transparent px-3 py-2 shadow-sm focus:border-gray-600 focus:outline-none focus:ring-gray-600 sm:text-sm">
-                  <option value="" selected class="text-gray-800">
+              <div className="col">
+                <select className="js-filter-sort input--sort block rounded-md border border-gray-500 bg-transparent px-3 py-2 shadow-sm focus:border-gray-600 focus:outline-none focus:ring-gray-600 sm:text-sm">
+                  <option value="" selected className="text-gray-800">
                     Most Rated
                   </option>
-                  <option value="-n-stock" class="text-gray-800">
+                  <option value="-n-stock" className="text-gray-800">
                     In stock
                   </option>
-                  <option value="low-to-high" class="text-gray-800">
+                  <option value="low-to-high" className="text-gray-800">
                     Price: Low → High
                   </option>
-                  <option value="high-to-low" class="text-gray-800">
+                  <option value="high-to-low" className="text-gray-800">
                     Price: High → Low
                   </option>
-                  <option value="by-recommended" class="text-gray-800">
+                  <option value="by-recommended" className="text-gray-800">
                     Recommended
                   </option>
-                  <option value="recently-added" class="text-gray-800">
+                  <option value="recently-added" className="text-gray-800">
                     Recently Added
                   </option>
-                  <option value="low-rating" class="text-gray-800">
+                  <option value="low-rating" className="text-gray-800">
                     Lowest Rated
                   </option>
                 </select>
@@ -115,7 +115,7 @@ export default function ProductList() {
             </div>
           </div>
           <div className="products">
-            <div className="product-list grid grid-cols-3 gap-16 w-[870px]">
+            <div className="product-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-16 w-full lg:w-[870px]">
               {currentItems.map((item) => (
                 <Card
                   key={item}
@@ -125,7 +125,7 @@ export default function ProductList() {
                 />
               ))}
             </div>
-            <div className="pagination-wrapper flex justify-center my-[70px]">
+            <div className="pagination-wrapper flex justify-center my-8 md:my-16 lg:my-[70px]">
               <div className="pagination inline-block">
                 <Pagination
                   itemsPerPage={itemsPerPage}
