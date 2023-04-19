@@ -11,7 +11,7 @@ export default function ProductList() {
   const itemsPerPage = 15;
 
   const productList = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -124,7 +124,9 @@ export default function ProductList() {
                   itemsPerPage={itemsPerPage}
                 />
               ))}
-              <div className="pagination">
+            </div>
+            <div className="pagination-wrapper flex justify-center my-[70px]">
+              <div className="pagination inline-block">
                 <Pagination
                   itemsPerPage={itemsPerPage}
                   totalItems={productList.length}

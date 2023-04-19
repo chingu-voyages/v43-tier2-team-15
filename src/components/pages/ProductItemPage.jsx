@@ -80,8 +80,7 @@ export default function ProductItem() {
               <div className="favourite mt-12 lg:mr-16 items-center flex">
                 <button
                   className="h-20 h-[50px] px-4 py-0 rounded-[10px] relative"
-                  onClick={handleFavoriteClick}
-                >
+                  onClick={handleFavoriteClick}>
                   <FontAwesomeIcon
                     className="icon-heart ml-0 h-[50px] w-[50px] relative text-safflower-red"
                     icon={isFavorited ? faHeartCircleCheck : faHeartCirclePlus}
@@ -92,7 +91,7 @@ export default function ProductItem() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

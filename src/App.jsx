@@ -12,11 +12,7 @@ function App() {
       <Header />
       <NavBar />
       <WelcomeSection />
-      <ProductItem />
-      <Filters />
-      <Link to="/productItem">
-        <Card id={6} />
-      </Link>
+      <Link to="/productItem"></Link>
       <WorldDelivery />
       <OfflineShop />
       <Footer />
