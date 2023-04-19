@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 
 function NavBar() {
@@ -15,7 +16,9 @@ function NavBar() {
 
         <div className={styles.icon}>
           <img src="/src/assets/images/Sample_User_Icon.png" />
+          <Link to="/cart">
           <img src="/src/assets/images/cart-icon.png" />
+          </Link>
         </div>
       </div>
     </nav>

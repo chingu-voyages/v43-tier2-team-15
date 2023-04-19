@@ -4,7 +4,7 @@ import NavBar from "./components/UI/NavBar";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 import OfflineShop from "./components/offline-shop/OfflineShop";
 import WorldDelivery from "./components/World-delivery/WorldDelivery";
-import ProductItem from "./components/pages/ProductItemPage";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -13,6 +13,10 @@ function App() {
       <NavBar />
       <WelcomeSection />
       <ProductItem />
+      <Filters />
+      <Link to="/productItem">
+        <Card id={6} />
+      </Link>
       <WorldDelivery />
       <OfflineShop />
       <Footer />
