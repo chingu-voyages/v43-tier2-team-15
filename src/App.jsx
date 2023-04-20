@@ -5,6 +5,7 @@ import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 import OfflineShop from "./components/offline-shop/OfflineShop";
 import WorldDelivery from "./components/World-delivery/WorldDelivery";
 import Popular from "./components/PopularItems";
+import Card from "./components/card/Card";
 import { Link } from "react-router-dom";
 
 function App() {
