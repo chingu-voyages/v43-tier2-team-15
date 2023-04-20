@@ -1,13 +1,11 @@
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
-import Card from "./components/card/Card";
 import NavBar from "./components/UI/NavBar";
 import WelcomeSection from "./components/Welcome-section/WelcomeSection";
 import OfflineShop from "./components/offline-shop/OfflineShop";
-import Filters from "./components/Layout/Filters";
 import WorldDelivery from "./components/World-delivery/WorldDelivery";
+import Popular from "./components/PopularItems";
 import { Link } from "react-router-dom";
-
 
 function App() {
   return (
@@ -15,10 +13,8 @@ function App() {
       <Header />
       <NavBar />
       <WelcomeSection />
-      <Filters />
-      <Link to="/productItem">
-        <Card id={6} />
-      </Link>
+      <Popular />
+      <Link to="/productItem"></Link>
       <WorldDelivery />
       <OfflineShop />
       <Footer />
