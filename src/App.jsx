@@ -14,7 +14,9 @@ function App() {
       <NavBar />
       <WelcomeSection />
       <Popular />
-      <Link to="/productItem"></Link>
+      <Link to="/productItem">
+        <Card id={13} />
+      </Link>
       <WorldDelivery />
       <OfflineShop />
       <Footer />
