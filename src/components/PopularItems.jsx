@@ -1,4 +1,5 @@
 import Card from "./card/Card";
+import { Link } from "react-router-dom";
 
 export default function Popular() {
   return (
@@ -9,7 +10,10 @@ export default function Popular() {
       <div className="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-14 lg:gap-20 xl:gap-28 mb-10">
         <Card id={1} />
         <Card id={2} />
-        <Card id={13} />
+        <Link to="/productItem">
+          {" "}
+          <Card id={13} />
+        </Link>
         <Card id={4} />
       </div>
     </div>
