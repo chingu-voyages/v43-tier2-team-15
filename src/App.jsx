@@ -8,15 +8,12 @@ import { Link } from "react-router-dom";
 import Popular from "./components/PopularItems";
 import Card from "./components/card/Card";
 
-
 function App() {
   return (
     <div className=" font-roboto bg-[#F6EEDF]">
       <Header />
       <NavBar />
       <WelcomeSection />
-      <Link to="/productItem">
-    <Card id={13}/></Link>
       <Popular />
       <WorldDelivery />
       <OfflineShop />
