@@ -31,3 +31,18 @@
   background-color: #f57b51;
   font-size: var(--font-size-m);
 }
+
+@media screen and (max-width: 765px) {
+  .item-img img {
+    max-height: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+  .price {
+    font-size: 24px;
+  }
+
+  .to-cart {
+    width: 70px;
+  }
+}

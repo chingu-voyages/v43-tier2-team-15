@@ -23,7 +23,7 @@ export default function Card({ id }) {
           <img
             src={props.imageUrl}
             alt={props.name}
-            className="object-cover w-full h-full rounded-[10px]"
+            className="object-cover w-full h-full rounded-[10px] max-w-full md:max-h-[308px]"
           />
         </div>
         <div className="favorite">
@@ -41,10 +41,10 @@ export default function Card({ id }) {
             {props.name}
           </div>
           <div className="low-row items-center flex flex-row h-[auto] md:h-[35px] w-full md:w-[225px] mt-2.5">
-            <div className="price relative flex-1 w-full md:w-[110px] h-full font-bold no-underline">
+            <div className="price relative flex-1 w-full md:w-[110px] h-full font-bold no-underline text-sm md:text-base">
               {props.price}
             </div>
-            <button className="to-cart text-white font-bold rounded-[10px] h-[auto] md:h-[35px] w-full md:w-[75px] no-underline mt-2.5 md:mt-0 md:ml-3 hover:scale-105 transition duration-500">
+            <button className="to-cart text-white font-bold rounded-[10px] h-[35px] md:h-[35px] w-full md:w-[75px] no-underline mt-2.5 md:mt-0 md:ml-3 hover:scale-105 transition duration-500 text-sm md:text-base">
               To cart
             </button>
           </div>
