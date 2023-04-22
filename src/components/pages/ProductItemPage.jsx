@@ -93,10 +93,14 @@ export default function ProductItem() {
           </div>
         </div>
         <Like />
-        <div className="reviews">
+        <div className="reviews mb-[170px] mt-[170px] ml-[200px] mr-[200px]">
           <ReviewsList />
         </div>
-
+        <div className="write-review text-center">
+          <button className="mb-[150px] w-[275px] h-12 text-base md:text-lg font-bold leading-[21px] tracking-normal text-center bg-bonfire text-[white] cursor-pointer ease-[ease] mt-5 px-4 py-0 rounded-[10px] hover:scale-105 transition duration-500 font-family-[Roboto]">
+            Write a review
+          </button>
+        </div>
         <Footer />
       </div>
     </>
