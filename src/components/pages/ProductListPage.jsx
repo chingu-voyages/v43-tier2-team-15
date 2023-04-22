@@ -29,7 +29,7 @@ export default function ProductList() {
         alt=""
         src="src/assets/images/banner.png"
       />
-      <div className="grid grid-cols-2 md:gap-[-10]">
+      <div className="flex flex-col-2">
         <div className="left-panel mt-[55px]">
           <div className="breadcrumb ml-[65px] mb-[45px]">
             <nav class="flex" aria-label="Breadcrumb">
@@ -81,7 +81,7 @@ export default function ProductList() {
             </div>
           </div>
         </div>
-        <div className="products-list-sort mr-[4vw]">
+        <div className="products-list-sort mr-16">
           <div className="filter-sort px-0 py-4 lg:py-10 float-right">
             <div className="row items-center">
               <div className="col-auto d-none lg:block font-roboto font-medium text-xs leading-4 tracking-widest text-left">

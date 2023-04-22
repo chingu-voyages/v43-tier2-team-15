@@ -40,7 +40,7 @@ function Filters(props) {
   }
 
   return (
-    <div className="filters box-border bg-foggy-gray rounded-[10px] flex flex-col gap-4 p-4 md:w-4/5 lg:w-[320px] xl:w-[320px] 2xl:w-[320px]">
+    <div className="filters box-border bg-foggy-gray rounded-[10px] flex flex-col gap-4 p-4 md:w-3/5 lg:w-[320px] xl:w-[320px] 2xl:w-[320px]">
       {FILTERS.map(({ title, options }) => (
         <div key={title}>
           <h2 className="title text-[#19191d] text-xl md:text-2xl leading-[113%] font-bold tracking-[0.5px]">

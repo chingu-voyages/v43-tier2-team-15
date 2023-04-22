@@ -1,6 +1,7 @@
 import Footer from "../Footer";
 import Header from "../header/Header";
 import NavBar from "../UI/NavBar";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   return (
@@ -114,9 +115,11 @@ export default function Cart() {
               </div>
               <div className="h-3/5">
                 <div className="flex items-center justify-center">
-                  <button className="h-20 w-[370px] not-italic font-bold text-lg leading-5 text-center text-white bg-bonfire ease-[ease] rounded-[10px] hover:scale-105 transition duration-500">
-                    Proceed order
-                  </button>
+                  <Link to="/checkout">
+                    <button className="h-20 w-[370px] not-italic font-bold text-lg leading-5 text-center text-white bg-bonfire ease-[ease] rounded-[10px] hover:scale-105 transition duration-500">
+                      Proceed order
+                    </button>
+                  </Link>
                 </div>
                 <div className="flex justify-center">
                   <button className="mt-10 h-20 w-[370px] not-italic font-bold text-lg leading-5 text-center text-white ease-[ease] border border-bonfire rounded-[10px] hover:scale-105 transition duration-500">
@@ -128,7 +131,7 @@ export default function Cart() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
