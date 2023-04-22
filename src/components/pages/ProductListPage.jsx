@@ -8,10 +8,10 @@ import Catalogue from "../Layout/Catalogue";
 import Pagination from "./Pagination";
 
 export default function ProductList() {
-  const itemsPerPage = 15;
+  const itemsPerPage = 12;
 
   const productList = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -29,7 +29,7 @@ export default function ProductList() {
         alt=""
         src="src/assets/images/banner.png"
       />
-      <div className="flex flex-col-2">
+      <div className="flex flex-col-2 gap-[120px]">
         <div className="left-panel mt-[55px]">
           <div className="breadcrumb ml-[65px] mb-[45px]">
             <nav class="flex" aria-label="Breadcrumb">
@@ -81,7 +81,7 @@ export default function ProductList() {
             </div>
           </div>
         </div>
-        <div className="products-list-sort mr-16">
+        <div className="products-list-sort 2xl:ml-36">
           <div className="filter-sort px-0 py-4 lg:py-10 float-right">
             <div className="row items-center">
               <div className="col-auto d-none lg:block font-roboto font-medium text-xs leading-4 tracking-widest text-left">
@@ -115,7 +115,7 @@ export default function ProductList() {
             </div>
           </div>
           <div className="products">
-            <div className="product-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-16 w-full lg:w-[870px]">
+            <div className="product-list grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 md:gap-8 lg:gap-12 2xl:gap-16 w-full">
               {currentItems.map((item) => (
                 <Card
                   key={item}
