@@ -30,7 +30,7 @@ export default function Cart() {
                 <img
                   src="/images/cart_product1.png"
                   alt="Product Item image"
-                  className="w-32 h-24"
+                  className="product-picture w-32 h-24 shadow-[0px_4px_4px_0px_#00000040] rounded-[10px]"
                 />
               </div>
               <div className="order__info">
@@ -55,7 +55,7 @@ export default function Cart() {
                 <img
                   src="/images/cart_product2.png"
                   alt="Product Item Image"
-                  className="w-32 h-24"
+                  className="product-picture w-32 h-24 shadow-[0px_4px_4px_0px_#00000040] rounded-[10px]"
                 />
               </div>
               <div className="order__info">
@@ -80,7 +80,7 @@ export default function Cart() {
                 <img
                   src="/images/cart_product3.png"
                   alt="Product Item Image"
-                  className="w-32 h-24"
+                  className="product-picture w-32 h-24 shadow-[0px_4px_4px_0px_#00000040] rounded-[10px]"
                 />
               </div>
               <div className="order__info">
