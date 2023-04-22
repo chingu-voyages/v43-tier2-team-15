@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import data from "./reviewsData";
+import "./Reviews.css";
 
 function ReviewsList() {
   const [showFade, setShowFade] = useState(false);
@@ -16,7 +17,7 @@ function ReviewsList() {
   return (
     <div>
       <h2 className="text-lg font-bold">Reviews ({data.length})</h2>
-      <div className="h-80 overflow-y-scroll" onScroll={handleScroll}>
+      <div className="h-80 overflow-y-scroll " onScroll={handleScroll}>
         {data.map((review, index) => (
           <div
             key={index}
