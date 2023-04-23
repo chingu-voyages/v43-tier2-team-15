@@ -10,6 +10,8 @@ import {
 import Footer from "../Footer.jsx";
 import Header from "../header/Header.jsx";
 import NavBar from "../UI/NavBar.jsx";
+import Like from "../YouMightLike.jsx";
+import ReviewsList from "../Reviews/Reviews.jsx";
 
 export default function ProductItem() {
   const [amount, setAmount] = useState(1);
@@ -79,7 +81,7 @@ export default function ProductItem() {
               </div>
               <div className="favourite mt-12 lg:mr-16 items-center flex">
                 <button
-                  className="h-20 h-[50px] px-4 py-0 rounded-[10px] relative"
+                  className="h-[50px] px-4 py-0 rounded-[10px] relative"
                   onClick={handleFavoriteClick}>
                   <FontAwesomeIcon
                     className="icon-heart ml-0 h-[50px] w-[50px] relative text-safflower-red"
@@ -90,8 +92,17 @@ export default function ProductItem() {
             </div>
           </div>
         </div>
+        <Like />
+        <div className="reviews mb-[170px] mt-[170px] ml-[200px] mr-[200px]">
+          <ReviewsList />
+        </div>
+        <div className="write-review text-center">
+          <button className="mb-[150px] w-[275px] h-12 text-base md:text-lg font-bold leading-[21px] tracking-normal text-center bg-bonfire text-[white] cursor-pointer ease-[ease] mt-5 px-4 py-0 rounded-[10px] hover:scale-105 transition duration-500 font-family-[Roboto]">
+            Write a review
+          </button>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }
