@@ -27,7 +27,7 @@ export default function ProductList() {
       <img
         className="banner w-full"
         alt=""
-        src="src/assets/images/banner.png"
+        src="src/public/images/banner.png"
       />
       <div className="flex flex-col-2 gap-[120px]">
         <div className="left-panel mt-[55px]">
