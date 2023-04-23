@@ -6,8 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeartCircleCheck,
   faHeartCirclePlus,
+  faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
-import "../../../index.css"
+import "../../index.css";
+import { useRef } from "react";
 
 export default function ProductItem() {
   const [amount, setAmount] = useState(1);
@@ -31,14 +33,24 @@ export default function ProductItem() {
     setIsFavorited(!isFavorited);
   };
 
-  const [selected, setSelected]= useState(null);
+  const [selected, setSelected] = useState(null);
 
-  const toggle = i =>{
-    if(selected==i){
-      return setSelected(null)
+  const toggle = (i) => {
+    if (selected == i) {
+      return setSelected(null);
     }
-    setSelected(i)
-  }
+    setSelected(i);
+  };
+
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef();
+  const deliveryRef = useRef();
+
+  window.addEventListener("click", (e) => {
+    if (e.target !== menuRef.current && e.target !== deliveryRef.current) {
+      setOpen(false);
+    }
+  });
 
   return (
     <div className="productItem bg-birch-white pt-24">
@@ -95,34 +107,87 @@ export default function ProductItem() {
           </div>
         </div>
       </div>
-      <div className="about mt-12 ml-16">
+
+      <div className="about mt-12 ml-0 lg:ml-16">
         <h3 className="not-italic font-bold text-2xl leading-7 text-left text-black">
           About the product
         </h3>
       </div>
-      <div className="wrapper mt-5 ml-16 flex justify-between">
+      <div className="wrapper mt-5 ml-0 lg:ml-16 block md:flex md:justify-evenly">
         <div className="accordion w-3/5">
           {accordionData.map((item, i) => (
-            <div className="item ">
+            <div className="item mt-1  rounded-lg bg-[#D1CEBD]">
               <div
-                className="title py-4 not-italic font-normal text-lg leading-5 flex items-center text-left text-black rounded-lg bg-[#D1CEBD]"
+                className="title py-4 not-italic font-normal text-lg leading-5 flex items-center text-left text-black"
                 onClick={() => toggle(i)}
               >
-                <span className="w-3 h-2 text-black text-center">
+                <span className="cursor-pointer ml-6 text-black text-center">
                   {selected === i ? "-" : "+"}
                 </span>
-                <h4>{item.question}</h4>
+                <h4 className="cursor-pointer ml-6">{item.question}</h4>
               </div>
-              <div className={selected === i ? "content show" : "content"}>{item.answer}</div>
+              <div className={selected === i ? "content show" : "content"}>
+                {item.answer}
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="dropdown"></div>
+        <div>
+          <div className="dropdown mt-1 w-2/5 w-40 h-20 rounded-lg bg-[#D1CEBD] h-fit">
+            <div className="flex align-center justify-around py-6 cursor-pointer">
+              <span>
+                <img
+                  src="/images/Delivery.png"
+                  alt="Delivery"
+                  className="w-5 h-5 mr-2"
+                />
+              </span>
+              <span onClick={() => setOpen(!open)} ref={deliveryRef}>
+                Delivery
+              </span>
+              <span>
+                <FontAwesomeIcon icon={faAngleDown} />{" "}
+              </span>
+            </div>
+
+            {open && (
+              <div ref={menuRef}>
+                <ul>
+                  {dropdownMenu.map((menu) => (
+                    <li
+                      key={menu}
+                      className="cursor-pointer p-2 m-1 rounded hover:bg-[#F6EEDF] "
+                      onClick={() => setOpen(false)}
+                    >
+                      {menu}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          <div className="mt-5 dropdown w-2/5 w-40 h-20 rounded-lg bg-[#D1CEBD] h-fit">
+            <div className="flex align-center justify-around py-6 cursor-pointer">
+              <span>Return Policy</span>
+              <span>
+                <FontAwesomeIcon icon={faAngleDown} />{" "}
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+const dropdownMenu = [
+  "Local shipping",
+  "International shipping",
+  "Expedited shipping",
+];
+
 const accordionData = [
   {
     question: "Material and Height",
@@ -137,4 +202,3 @@ const accordionData = [
     answer: "12/2020 As Exclusive «Bilbili Exclusive»",
   },
 ];
-
