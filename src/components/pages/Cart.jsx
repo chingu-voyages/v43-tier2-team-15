@@ -1,6 +1,7 @@
 import Footer from "../Footer";
 import Header from "../header/Header";
 import NavBar from "../UI/NavBar";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   return (
@@ -29,7 +30,7 @@ export default function Cart() {
                 <img
                   src="/images/cart_product1.png"
                   alt="Product Item image"
-                  className="w-32 h-24"
+                  className="product-picture w-32 h-24 shadow-[0px_4px_4px_0px_#00000040] rounded-[10px]"
                 />
               </div>
               <div className="order__info">
@@ -54,7 +55,7 @@ export default function Cart() {
                 <img
                   src="/images/cart_product2.png"
                   alt="Product Item Image"
-                  className="w-32 h-24"
+                  className="product-picture w-32 h-24 shadow-[0px_4px_4px_0px_#00000040] rounded-[10px]"
                 />
               </div>
               <div className="order__info">
@@ -79,7 +80,7 @@ export default function Cart() {
                 <img
                   src="/images/cart_product3.png"
                   alt="Product Item Image"
-                  className="w-32 h-24"
+                  className="product-picture w-32 h-24 shadow-[0px_4px_4px_0px_#00000040] rounded-[10px]"
                 />
               </div>
               <div className="order__info">
@@ -114,9 +115,11 @@ export default function Cart() {
               </div>
               <div className="h-3/5">
                 <div className="flex items-center justify-center">
-                  <button className="h-20 w-[370px] not-italic font-bold text-lg leading-5 text-center text-white bg-bonfire ease-[ease] rounded-[10px] hover:scale-105 transition duration-500">
-                    Proceed order
-                  </button>
+                  <Link to="/checkout">
+                    <button className="h-20 w-[370px] not-italic font-bold text-lg leading-5 text-center text-white bg-bonfire ease-[ease] rounded-[10px] hover:scale-105 transition duration-500">
+                      Proceed order
+                    </button>
+                  </Link>
                 </div>
                 <div className="flex justify-center">
                   <button className="mt-10 h-20 w-[370px] not-italic font-bold text-lg leading-5 text-center text-white ease-[ease] border border-bonfire rounded-[10px] hover:scale-105 transition duration-500">
@@ -128,7 +131,7 @@ export default function Cart() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
