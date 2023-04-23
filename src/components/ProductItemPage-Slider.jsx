@@ -3,8 +3,8 @@ import { useState } from "react";
 export default function ProductItemSlider() {
   const images = [
     { id: 0, value: "/images/product_item-img1.png" },
-    { id: 1, value: "/images/product_item-img3.png" },
-    { id: 2, value: "/images/product_item-img4.png" },
+    { id: 1, value: "/images/Product_item_img2.jpg" },
+    { id: 2, value: "/images/Product_item_img3.jpg" },
   ];
 
   const [sliderData, setSliderData] = useState(images[0]);
@@ -24,7 +24,7 @@ export default function ProductItemSlider() {
               key={data.id}
               src={data.value}
               onClick={() => handleClick(i)}
-              className="h-24  w-32"
+              className="h-24 w-32"
               
             />
           </div>
