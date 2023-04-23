@@ -2,6 +2,7 @@ import Footer from "../Footer";
 import Header from "../header/Header";
 import NavBar from "../UI/NavBar";
 import { Link } from "react-router-dom";
+import Like from "../YouMightLike";
 
 export default function Cart() {
   return (
@@ -130,6 +131,9 @@ export default function Cart() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mb-[170px]">
+        <Like />
       </div>
       <Footer />
     </div>
