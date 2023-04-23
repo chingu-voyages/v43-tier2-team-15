@@ -28,7 +28,7 @@ const OfflineShop = () => {
         <img
           className="main-img m-auto mt-8 w-[21.2rem] h-[18.3rem]  lg:mt-0 md:w-[40rem] md:h-[30rem] object-cover"
           alt=""
-          src="src\public\images\offlineMain.png"
+          src="/images/offlineMain.png"
         />
       </div>
 
@@ -36,22 +36,22 @@ const OfflineShop = () => {
         <img
           className="side-img w-[8.2rem] h-[5.3rem] md:w-[10.2rem] md:h-[7.3rem] lg:w-[16.2rem] lg:h-[13.3rem] object-cover"
           alt=""
-          src="src\public\images\offlineSide1.png"
+          src="/images/offlineSide1.png"
         />
         <img
           className="side-img w-[8.2rem] h-[5.3rem] md:w-[10.2rem] md:h-[7.3rem] lg:w-[16.2rem] lg:h-[13.3rem] object-cover"
           alt=""
-          src="/src\public\images\offlineSide2.png"
+          src="/images/offlineSide2.png"
         />
         <img
           className="side-img w-[8.2rem] h-[5.3rem] md:w-[10.2rem] md:h-[7.3rem] lg:w-[16.2rem] lg:h-[13.3rem] object-cover"
           alt=""
-          src="src\public\images\offlineSide3.png"
+          src="/images/offlineSide3.png"
         />
         <img
           className="side-img w-[8.2rem] h-[5.3rem] md:w-[10.2rem] md:h-[7.3rem] lg:w-[16.2rem] lg:h-[13.3rem] object-cover"
           alt=""
-          src="src\public\images\offlineSide4.png"
+          src="/images/offlineSide4.png"
         />
       </div>
       <div className="mt-32 flex justify-center">

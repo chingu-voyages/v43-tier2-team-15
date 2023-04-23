@@ -5,7 +5,7 @@ export default function ThankYouPopUp() {
         <a href="#">
           <img
             className="rounded-t-lg max-w-screen-lg mx-auto flex"
-            src="./src/public/images/ion_checkmark-done-circle-outline.png"
+            src="/images/ion_checkmark-done-circle-outline.png"
             alt=""
           />
         </a>

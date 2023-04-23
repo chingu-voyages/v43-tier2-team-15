@@ -16,7 +16,7 @@ function Header() {
         <Link to="/" className="h-20 sm:h-full">
           <img
             className="h-20 sm:h-full"
-            src="/Logo.png"
+            src="images/Logo.png"
             alt="anime accessory shop logo"
           />
         </Link>

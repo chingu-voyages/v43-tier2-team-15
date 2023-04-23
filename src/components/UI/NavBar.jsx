@@ -15,9 +15,9 @@ function NavBar() {
         </ul>
 
         <div className={styles.icon}>
-          <img src="/src/public/images/Sample_User_Icon.png" />
+          <img src="/images/Sample_User_Icon.png" />
           <Link to="/cart">
-            <img src="/src/public/images/cart-icon.png" />
+            <img src="/images/cart-icon.png" />
           </Link>
         </div>
       </div>
