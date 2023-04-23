@@ -7,6 +7,7 @@ import {
   faHeartCircleCheck,
   faHeartCirclePlus,
 } from "@fortawesome/free-solid-svg-icons";
+import "../../../index.css"
 
 export default function ProductItem() {
   const [amount, setAmount] = useState(1);
@@ -29,6 +30,15 @@ export default function ProductItem() {
   const handleFavoriteClick = () => {
     setIsFavorited(!isFavorited);
   };
+
+  const [selected, setSelected]= useState(null);
+
+  const toggle = i =>{
+    if(selected==i){
+      return setSelected(null)
+    }
+    setSelected(i)
+  }
 
   return (
     <div className="productItem bg-birch-white pt-24">
@@ -85,6 +95,46 @@ export default function ProductItem() {
           </div>
         </div>
       </div>
+      <div className="about mt-12 ml-16">
+        <h3 className="not-italic font-bold text-2xl leading-7 text-left text-black">
+          About the product
+        </h3>
+      </div>
+      <div className="wrapper mt-5 ml-16 flex justify-between">
+        <div className="accordion w-3/5">
+          {accordionData.map((item, i) => (
+            <div className="item ">
+              <div
+                className="title py-4 not-italic font-normal text-lg leading-5 flex items-center text-left text-black rounded-lg bg-[#D1CEBD]"
+                onClick={() => toggle(i)}
+              >
+                <span className="w-3 h-2 text-black text-center">
+                  {selected === i ? "-" : "+"}
+                </span>
+                <h4>{item.question}</h4>
+              </div>
+              <div className={selected === i ? "content show" : "content"}>{item.answer}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="dropdown"></div>
+      </div>
     </div>
   );
 }
+const accordionData = [
+  {
+    question: "Material and Height",
+    answer: "Material: ABS, PVC; Height = 180mm (7.02in)",
+  },
+  {
+    question: "Type and Brand",
+    answer: "Figure, Taito",
+  },
+  {
+    question: "Realese date",
+    answer: "12/2020 As Exclusive «Bilbili Exclusive»",
+  },
+];
+

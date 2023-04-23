@@ -70,6 +70,19 @@ h6 {
   animation-fill-mode: forwards;
 }
 
+.content{
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+
+}
+
 @keyframes slidein {
   from {
     opacity: 0.3;
