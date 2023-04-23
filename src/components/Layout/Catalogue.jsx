@@ -8,7 +8,7 @@ const Catalogue = forwardRef(({}, ref) => {
       <div className={styles["catalogue-container"]}>
         <h2>
           <span>
-            <img src="/src/assets/images/catalogue-icon.png" />
+            <img src="/images/catalogue-icon.png" />
           </span>
           Catalogue
         </h2>

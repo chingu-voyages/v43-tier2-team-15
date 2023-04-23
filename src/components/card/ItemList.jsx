@@ -131,6 +131,13 @@ const products = [
     price: "90 euro",
     imageUrl: "images/product19.png",
   },
+
+  {
+    id: 20,
+    name: "No information",
+    price: "0 euro",
+    imageUrl: "images/no__image.png",
+  },
 ];
 
 export default function GetItem(id) {

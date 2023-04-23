@@ -40,13 +40,15 @@ function Filters(props) {
   }
 
   return (
-    <div className="filters">
+    <div className="filters box-border bg-foggy-gray rounded-[10px] flex flex-col gap-4 p-4 md:w-[250px] lg:w-[320px] xl:w-[320px] 2xl:w-[320px]">
       {FILTERS.map(({ title, options }) => (
         <div key={title}>
-          <h2 className="title">{title}</h2>
-          <div className="expended-filters">
+          <h2 className="title text-[#19191d] text-xl md:text-2xl leading-[113%] font-bold tracking-[0.5px]">
+            {title}
+          </h2>
+          <div className="expended-filters flex flex-col gap-2.5 py-4 md:pl-4 md:pr-0">
             {options.map(({ id, name }) => (
-              <div key={id} className="criteria">
+              <div key={id} className="criteria flex flex-row items-center">
                 <input
                   className="checkbox"
                   type="checkbox"
@@ -54,14 +56,16 @@ function Filters(props) {
                   name={id}
                   onChange={handleCheckboxChange}
                 />
-                <h4 className="caption">{name}</h4>
+                <h4 className="caption text-[#2e2d2d] text-base md:text-lg leading-[150%] font-normal tracking-[0.5px] pl-2">
+                  {name}
+                </h4>
               </div>
             ))}
           </div>
         </div>
       ))}
       <div className="apply">
-        <button className="h-10 w-full md:w-[200px] text-lg font-bold leading-[21px] tracking-normal text-center bg-bonfire text-[white] cursor-pointer ease-[ease] px-[2rem] py-0 rounded-[10px] hover:scale-105 transition duration-500 font-family-[Roboto]">
+        <button className="w-full md:w-[200px] h-10 text-base md:text-lg font-bold leading-[21px] tracking-normal text-center bg-bonfire text-[white] cursor-pointer ease-[ease] mt-5 mb-10 px-4 py-0 rounded-[10px] hover:scale-105 transition duration-500 font-family-[Roboto]">
           Apply
         </button>
       </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const logoUrl = "/images/footer__img.png";
 
 const icons = [
@@ -20,11 +22,12 @@ export default function Footer() {
     <footer className="footer mx-auto w-full h-full bg-safflower-red py-5 not-italic md:h-80 md:flex md:justify-around md:items-center">
       <div className="footer__section1 flex px-5 max-w-[1440px] justify-around items-center md:w-6/12 md:justify-around">
         <div className="footer__img h-25 w-25 md:h-40 md:w-40 ">
+          <Link to="/">
           <img
             src={logoUrl}
             alt="“Otaku’s world” logo"
             className="mx-auto md:m-0"
-          />
+          /></Link>
         </div>
         <div className="footer__contactUs text-center mt-3  pt-1 md:mt-0 md:text-left">
           <h4 className="text-black font-bold text-xl text-center md:text-2xl md:leading-7 md:text-left ">
